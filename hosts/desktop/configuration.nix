@@ -1,4 +1,4 @@
-{ config, pkgs, inputs, ... }:
+{ config, pkgs, ... }:
 
 {
   imports = [ ./hardware-configuration.nix ];
@@ -119,13 +119,6 @@
       stow
       libgccjit
     ];
-  };
-
-  home-manager = {
-    specialArgs = { inherit inputs; };
-    users = {
-      "ryan" = import ./home.nix;
-    };
   };
 
   # Allow unfree packages
