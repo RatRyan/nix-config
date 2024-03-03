@@ -134,6 +134,7 @@
     tidal-hifi
     xclip
     wl-clipboard
+    sqlite
   ];
 
   xdg.portal.enable = true;
