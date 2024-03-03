@@ -125,6 +125,7 @@
     firefox
     discord
     neovim
+    fish
     fishPlugins.done
     fishPlugins.fzf-fish
     fishPlugins.forgit
