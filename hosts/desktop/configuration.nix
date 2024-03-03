@@ -119,23 +119,18 @@
     btop
     zoxide
     waybar
-    dunst
     libnotify
-    swww
     firefox
     discord
     neovim
     fish
     fzf
-    grc
     eza
     wezterm
     starship
     stow
     libgccjit
-    rofi-wayland
     neofetch
-    networkmanagerapplet
     tidal-hifi
     xclip
     wl-clipboard
