@@ -128,7 +128,6 @@
     fish
     eza
     wezterm
-    kitty
     starship
     stow
     libgccjit
