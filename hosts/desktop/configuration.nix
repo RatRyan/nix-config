@@ -69,7 +69,6 @@
   # Enable the X11 windowing system.
   services.xserver.enable = true;
   services.xserver.displayManager.sddm.enable = true;
-  services.xserver.desktopManager.plasma5.enable = true;
 
   environment.sessionVariables = {
     WLR_NO_HARDWARE_CURSORS = "1";
@@ -145,6 +144,7 @@
     rofi-wayland
     neofetch
     networkmanagerapplet
+    tidal-hifi
   ];
 
   xdg.portal.enable = true;
