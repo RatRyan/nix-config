@@ -144,6 +144,7 @@
     libgccjit
     rofi-wayland
     neofetch
+    networkmanagerapplet
   ];
 
   xdg.portal.enable = true;
