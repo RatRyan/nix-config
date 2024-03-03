@@ -38,7 +38,7 @@
     package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
 
-  networking.hostName = "nixos"; # Define your hostname.
+  networking.hostName = "nixos";
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Configure network proxy if necessary
@@ -68,8 +68,8 @@
 
   # Enable the X11 windowing system.
   services.xserver.enable = true;
-  services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
+  services.xserver.displayManager.sddm.enable = true;
+  services.xserver.desktopManager.plasma5.enable = true;
 
   # Configure keymap in X11
   services.xserver = {
@@ -137,7 +137,8 @@
     neofetch
     networkmanagerapplet
     tidal-hifi
-    gnome.adwaita-icon-theme
+    xclip
+    wl-clipboard
   ];
 
   xdg.portal.enable = true;
