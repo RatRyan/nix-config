@@ -11,7 +11,7 @@
       pkgs = nixpkgs.legacyPackages.${system};
     in
     {
-      nixosConfigurations."rhalgr" = nixpkgs.lib.nixosSystem rec {
+      nixosConfigurations."desktop" = nixpkgs.lib.nixosSystem rec {
           specialArgs = {inherit inputs;};
           modules = [ 
             ./hosts/desktop/configuration.nix
