@@ -1,5 +1,5 @@
 {
-  description = "Nixos config flake";
+  description = "Dude my brain hurts";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
@@ -14,7 +14,7 @@
       nixosConfigurations."nixos" = nixpkgs.lib.nixosSystem rec {
           specialArgs = {inherit inputs;};
           modules = [ 
-            ./hosts/desktop/configuration.nix
+            ./hosts/rhalgr/configuration.nix
           ];
         };
     };
