@@ -69,10 +69,6 @@
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
-  # Enable the GNOME Desktop Environment.
-  services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
-
   environment.sessionVariables = {
     WLR_NO_HARDWARE_CURSORS = "1";
     NIXOS_OZONE_WL = "1";
@@ -145,10 +141,10 @@
     stow
     libgccjit
     rofi-wayland
+    neofetch
   ];
 
   xdg.portal.enable = true;
-  xdg.portal.extraPortalso = [ pkgs.xdg-desktop-portal-gtk ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
