@@ -117,18 +117,6 @@
     isNormalUser = true;
     description = "Ryan Ratajczak";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-      firefox
-      discord
-      neovim
-      fish
-      eza
-      wezterm
-      kitty
-      starship
-      stow
-      libgccjit
-    ];
   };
 
   # Allow unfree packages
@@ -142,7 +130,25 @@
     gh
     btop
     zoxide
+    waybar
+    dunst
+    libnotify
+    swww
+    firefox
+    discord
+    neovim
+    fish
+    eza
+    wezterm
+    kitty
+    starship
+    stow
+    libgccjit
+    rofi-wayland
   ];
+
+  xdg.portal.enable = true;
+  xdg.portal.extraPortalso = [ pkgs.xdg-desktop-portal-gtk ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
