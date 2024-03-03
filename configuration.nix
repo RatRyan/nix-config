@@ -133,6 +133,7 @@
     vim
     wget
     git
+    gh
     btop
     zoxide
   ];
