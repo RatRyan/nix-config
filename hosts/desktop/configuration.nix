@@ -125,7 +125,13 @@
     firefox
     discord
     neovim
-    fish
+    fishPlugins.done
+    fishPlugins.fzf-fish
+    fishPlugins.forgit
+    fishPlugins.hydro
+    fzf
+    fishPlugins.grc
+    grc
     eza
     wezterm
     starship
