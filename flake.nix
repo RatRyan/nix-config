@@ -14,7 +14,7 @@
       nixosConfigurations."rhalgr" = nixpkgs.lib.nixosSystem rec {
           specialArgs = {inherit inputs;};
           modules = [ 
-            ./hosts/rhalgr/configuration.nix
+            ./hosts/desktop/configuration.nix
           ];
         };
     };
