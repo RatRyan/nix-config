@@ -145,7 +145,6 @@
     neofetch
     networkmanagerapplet
     tidal-hifi
-    mpd
   ];
 
   xdg.portal.enable = true;
