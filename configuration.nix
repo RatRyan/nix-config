@@ -112,7 +112,9 @@
       discord
       neovim
       fish
+      eza
       wezterm
+      kitty
       starship
       stow
       libgcc
