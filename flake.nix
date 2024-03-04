@@ -11,10 +11,10 @@
       pkgs = nixpkgs.legacyPackages.${system};
     in
     {
-      nixosConfigurations."desktop" = nixpkgs.lib.nixosSystem rec {
+      nixosConfigurations."workstation" = nixpkgs.lib.nixosSystem rec {
           specialArgs = {inherit inputs;};
           modules = [ 
-            ./hosts/desktop/configuration.nix
+            ./hosts/workstation/configuration.nix
           ];
         };
     };
