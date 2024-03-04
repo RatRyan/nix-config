@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{config, pkgs, ...}: {
   # Enable OpenGL
   hardware.opengl = {
     enable = true;
@@ -15,5 +15,6 @@
     powerManagement.finegrained = false;
     open = false;
     nvidiaSettings = true;
+    package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
 }
