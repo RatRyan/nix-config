@@ -3,6 +3,8 @@
 {
   imports = [
     ../../modules/nvidia.nix
+
+    ./hardware-configuration.nix
   ];
 
   # Bootloader.
@@ -113,7 +115,6 @@
     xclip
     wl-clipboard
     sqlite
-    etcher
     nodejs_21
   ];
 
@@ -148,3 +149,4 @@
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "23.11"; # Did you read the comment?
 }
+

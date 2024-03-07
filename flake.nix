@@ -1,5 +1,5 @@
 {
-  description = "My Nix Flake :slight_smile:";
+  description = "Nix Flake :slight_smile:";
 
   inputs = {
     # I aint a coward
@@ -12,11 +12,19 @@
       pkgs = nixpkgs.legacyPackages.${system};
     in
     {
-      nixosConfigurations."workstation" = nixpkgs.lib.nixosSystem rec {
+      nixosConfigurations = {
+        desktop = nixpkgs.lib.nixosSystem rec {
           specialArgs = {inherit inputs;};
           modules = [ 
-            ./hosts/workstation/configuration.nix
+            ./hosts/desktop/configuration.nix
           ];
         };
+        thinkpad = nixpkgs.lib.nixosSystem rec {
+          specialArgs = {inherit inputs;};
+          modules = [ 
+            ./hosts/thinkpad/configuration.nix
+          ];
+        };
+      };
     };
 }
