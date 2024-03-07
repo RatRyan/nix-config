@@ -1,7 +1,8 @@
 {
-  description = "Dude my brain hurts";
+  description = "My Nix Flake :slight_smile:";
 
   inputs = {
+    # I aint a coward
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
   };
 
