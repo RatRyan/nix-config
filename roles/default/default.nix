@@ -2,7 +2,7 @@
 
 {
   imports = [
-    ../../modules/core/nvidia
+    ../../modules/nvidia.nix
   ];
 
   # Bootloader.
