@@ -1,12 +1,5 @@
-{ config, pkgs, lib, ... }:
+{ lib, ... }:
 {
-  imports = [
-    ../../modules/configuration.nix
-
-    ./hardware-configuration.nix 
-  ];
-
-  # Configure keymap in X11
   services.xserver = {
     layout = lib.mkForce "us";
     xkbVariant = lib.mkForce "colemak_dh_wide";
