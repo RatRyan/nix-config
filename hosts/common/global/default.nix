@@ -13,7 +13,6 @@
     };
   };
 
-  # I'm a coward :P
   services.envfs.enable = true;
 
   networking.hostName = "nixos";
@@ -94,10 +93,8 @@
     waybar
     libnotify
     firefox
-    discord
     vesktop
     neovim
-    fish
     fzf
     eza
     wezterm
