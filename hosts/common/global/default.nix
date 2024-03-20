@@ -90,7 +90,6 @@
     gh
     btop
     zoxide
-    waybar
     libnotify
     firefox
     vesktop
@@ -105,7 +104,6 @@
     tidal-hifi
     xclip
     wl-clipboard
-    nodejs_21
   ];
 
   xdg.portal.enable = true;
