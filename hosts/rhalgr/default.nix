@@ -6,10 +6,13 @@
     ../common/global
   ];
 
+  networking.hostName = "rhalgr";
+
   services.xserver = {
     layout = lib.mkForce "us";
     xkbVariant = lib.mkForce "colemak_dh_wide";
   };
+
 
   services.keyd = {
     enable = true;

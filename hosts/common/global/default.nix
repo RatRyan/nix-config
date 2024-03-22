@@ -12,7 +12,6 @@
       outputs.overlays.modifications
       outputs.overlays.unstable-packages
     ];
-
     config = {
       allowUnfree = true;
     };
@@ -48,8 +47,6 @@
   };
 
   services.envfs.enable = true;
-
-  networking.hostName = "nixos";
 
   # Enable networking
   networking.networkmanager.enable = true;
@@ -137,7 +134,4 @@
       extraGroups = ["wheel" "networkmanager"];
     };
   };
-
-  # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
-  system.stateVersion = "23.11";
 }
