@@ -3,7 +3,7 @@
   imports = [
     ./hardware-configuration.nix
 
-    ../common
+    ../common/global
   ];
 
   networking.hostName = "rhalgr";
@@ -12,7 +12,6 @@
     layout = lib.mkForce "us";
     xkbVariant = lib.mkForce "colemak_dh_wide";
   };
-
 
   services.keyd = {
     enable = true;
@@ -40,6 +39,8 @@
       };
     };
   };
+
+  powerManagement.powertop.enable = true;
 
   system.stateVersion = "23.11";
 }
