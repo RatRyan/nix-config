@@ -16,10 +16,8 @@
       systems = [ "x86_64-linux" "aarch64-linux" ];
       forAllSystems = nixpkgs.lib.genAttrs systems;
     in {
-      packages = forAllSystems (system: import ./pkgs nixpkgs.legacyPackages.${system});
       formatter = forAllSystems (system: nixpkgs.legacyPackages.${system}.alejandra);
 
-      overlays = import ./overlays {inherit inputs;};
       nixosModules = import ./modules/nixos;
       homeManagerModules = import ./modules/home;
 
@@ -33,14 +31,6 @@
         rhalgr = nixpkgs.lib.nixosSystem {
           modules = [ ./hosts/rhalgr ];
           specialArgs = {inherit inputs outputs;};
-        };
-      };
-
-      homeConfigurations = {
-        "ryan@byregot" = home-manager.lib.homeManagerConfiguration {
-          pkgs = nixpkgs.legacyPackages.x86_64-linux;
-          extraSpecialArgs = {inherit inputs outputs;};
-          modules = [ ./home-manager/home.nix ];
         };
       };
     };

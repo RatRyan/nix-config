@@ -1,9 +1,9 @@
-{ pkgs, inputs, lib, ... }:
-{
+{ pkgs, inputs, lib, ... }: {
+
   imports = [
     ./hardware-configuration.nix
 
-    ../common/global
+    ../common
   ];
 
   networking.hostName = "byregot";
