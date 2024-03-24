@@ -1,6 +1,7 @@
 { inputs, outputs, lib, config, pkgs, ... }: {
 
   imports = [
+    inputs.home-manager.nixosModules.home-manager
     ./fish.nix
   ];
 
@@ -109,10 +110,17 @@
     starship
     stow
     neofetch
-    tidal-hifi
     xclip
     wl-clipboard
+    home-manager
   ];
+
+  home-manager = {
+    extraSpecialArgs = { inherit inputs outputs; };
+    users = {
+      ryan = import ../../../home;
+    };
+  };
 
   xdg.portal.enable = true;
 

@@ -25,12 +25,12 @@
         # Personal Desktop
         byregot = nixpkgs.lib.nixosSystem {
           modules = [ ./hosts/byregot ];
-          specialArgs = {inherit inputs outputs;};
+          specialArgs = { inherit inputs outputs; };
         };
         # School Laptop
         rhalgr = nixpkgs.lib.nixosSystem {
           modules = [ ./hosts/rhalgr ];
-          specialArgs = {inherit inputs outputs;};
+          specialArgs = { inherit inputs outputs; };
         };
       };
     };
