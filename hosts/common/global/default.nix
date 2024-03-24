@@ -3,6 +3,9 @@
   imports = [
     inputs.home-manager.nixosModules.home-manager
     ./fish.nix
+    ./flatpak.nix
+
+    ../optional/steam.nix
   ];
 
   nixpkgs.config.allowUnfree = true;

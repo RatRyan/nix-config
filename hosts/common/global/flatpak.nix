@@ -1,0 +1,3 @@
+{
+  programs.flatpak.enable = true;
+}

@@ -12,10 +12,8 @@
 
   home.packages = with pkgs; [ 
     sl
-    tidal-hfi
+    tidal-hifi
   ];
-  
-  services.flatpak.enable = true;
 
   programs.home-manager.enable = true;
   programs.neovim.enable = true;
