@@ -10,10 +10,15 @@
     homeDirectory = "/home/ryan";
   };
 
-  home.packages = with pkgs; [ sl ];
+  home.packages = with pkgs; [ 
+    sl
+    tidal-hfi
+  ];
+  
+  services.flatpak.enable = true;
 
-  programs.neovim.enable = true;
   programs.home-manager.enable = true;
+  programs.neovim.enable = true;
   programs.git.enable = true;
 
   # Nicely reload system units when changing configs
