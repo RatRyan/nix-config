@@ -8,9 +8,9 @@
 
   networking.hostName = "rhalgr";
 
-  services.xserver = {
+  services.xserver.xkb = {
     layout = lib.mkForce "us";
-    xkbVariant = lib.mkForce "colemak_dh_wide";
+    variant = lib.mkForce "colemak_dh_wide";
   };
 
   services.keyd = {

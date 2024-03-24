@@ -4,8 +4,6 @@
     inputs.home-manager.nixosModules.home-manager
     ./fish.nix
     ./flatpak.nix
-
-    ../optional/steam.nix
   ];
 
   nixpkgs.config.allowUnfree = true;
@@ -63,9 +61,9 @@
   };
 
   # Configure keymap in X11
-  services.xserver = {
+  services.xserver.xkb = {
     layout = "us";
-    xkbVariant = "";
+    variant = "";
   };
 
   # Enable the X11 windowing system.
