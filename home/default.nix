@@ -1,9 +1,5 @@
 { inputs, outputs, lib, config, pkgs, ... }: {
 
-  imports = [
-    ./plasma.nix
-  ];
-
   nixpkgs.config = {
     allowUnfree = true;
     allowUnfreePredicate = _: true;
@@ -19,7 +15,6 @@
     tidal-hifi
   ];
 
-  programs.home-manager.enable = true;
   programs.neovim.enable = true;
   programs.git.enable = true;
 
