@@ -4,6 +4,8 @@
     inputs.home-manager.nixosModules.home-manager
     ./fish.nix
     ./flatpak.nix
+
+    ../optional/nvidia.nix
   ];
 
   nixpkgs.config.allowUnfree = true;
