@@ -1,5 +1,9 @@
 { inputs, outputs, lib, config, pkgs, ... }: {
 
+  imports = [
+    ./plasma.nix
+  ];
+
   nixpkgs.config = {
     allowUnfree = true;
     allowUnfreePredicate = _: true;
