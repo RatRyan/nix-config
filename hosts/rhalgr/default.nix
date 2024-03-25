@@ -40,6 +40,8 @@
     };
   };
 
+  services.xserver.libinput.enable = true;
+
   powerManagement.powertop.enable = true;
 
   system.stateVersion = "23.11";
