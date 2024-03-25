@@ -15,7 +15,7 @@
     tidal-hifi
 
     # Languages
-    dotnet-sdk
+    dotnet-sdk_8
   ];
 
   programs.java.enable = true;
