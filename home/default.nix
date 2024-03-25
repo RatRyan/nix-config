@@ -1,6 +1,6 @@
 { inputs, outputs, lib, config, pkgs, ... }: {
 
-  import = [
+  imports = [
     ./plasma.nix
   ];
 
