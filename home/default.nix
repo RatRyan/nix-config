@@ -13,8 +13,12 @@
   home.packages = with pkgs; [ 
     sl
     tidal-hifi
+
+    # Languages
+    dotnet-sdk
   ];
 
+  programs.java.enable = true;
   programs.neovim.enable = true;
   programs.git.enable = true;
 
