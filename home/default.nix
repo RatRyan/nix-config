@@ -18,6 +18,7 @@
     tidal-hifi
     obsidian
     megasync
+    vesktop
 
     # Languages
     dotnet-sdk_8

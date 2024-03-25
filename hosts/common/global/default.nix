@@ -4,8 +4,6 @@
     inputs.home-manager.nixosModules.home-manager
     ./fish.nix
     ./flatpak.nix
-
-    ../optional/nvidia.nix
   ];
 
   nixpkgs.config.allowUnfree = true;
@@ -93,30 +91,30 @@
     #media-session.enable = true;
   };
 
-  # Enable touchpad support (enabled default in most desktopManager).
-  # services.xserver.libinput.enable = true;
-
   # List packages installed in system profile
   environment.systemPackages = with pkgs; [
+    # CLI tools
     vim
     wget
     git
     gh
     btop
     zoxide
-    firefox
-    vesktop
-    neovim
     fzf
     eza
-    wezterm
-    starship
     stow
+    starship
     neofetch
+    
+    # Misc
+    firefox
+    wezterm
     xclip
     wl-clipboard
     home-manager
   ];
+
+  xdg.portal.enable = true;
 
   home-manager = {
     extraSpecialArgs = { inherit inputs outputs; };
@@ -124,8 +122,6 @@
       ryan = import ../../../home;
     };
   };
-
-  xdg.portal.enable = true;
 
   users.users = {
     ryan = {
