@@ -33,7 +33,6 @@
     obsidian
     megasync
     vesktop
-    jetbrains-mono
   ];
 
   programs.java.enable = true;
