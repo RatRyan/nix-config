@@ -4,6 +4,7 @@
     allowUnfree = true;
     allowUnfreePredicate = _: true;
     permittedInsecurePackages = [
+      # megasync
       "freeimage-unstable-2021-11-01"
     ];
   };
