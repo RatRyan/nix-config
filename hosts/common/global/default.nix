@@ -127,7 +127,7 @@
     ryan = {
       isNormalUser = true;
       description = "Ryan Ratajczak";
-      extraGroups = ["wheel" "networkmanager"];
+      extraGroups = ["wheel" "networkmanager" "docker"];
     };
   };
 }
