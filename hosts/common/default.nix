@@ -119,7 +119,7 @@
   home-manager = {
     extraSpecialArgs = { inherit inputs outputs; };
     users = {
-      ryan = import ../../../home;
+      ryan = import ../../home;
     };
   };
 
