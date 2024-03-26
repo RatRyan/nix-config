@@ -12,17 +12,20 @@
 
   outputs = { self, nixpkgs, home-manager, ... } @ inputs:
     let
-      system = "x86_64-linux";
-      lib = nixpkgs.lib;
+      inherit (self) outputs;
+      systems = [ "x86_64-linux" "aarch64-linux" ];
+      forAllSystems = nixpkgs.lib.genAttrs systems;
     in {
+      formatter = forAllSystems (system: nixpkgs.legacyPackages.${system}.alejandra);
+
       nixosConfigurations = {
         # Personal Desktop
-        byregot = lib.nixosSystem {
+        byregot = nixpkgs.lib.nixosSystem {
           modules = [ ./hosts/byregot ];
           specialArgs = { inherit inputs outputs; };
         };
         # School Laptop
-        rhalgr = lib.nixosSystem {
+        rhalgr = nixpkgs.lib.nixosSystem {
           modules = [ ./hosts/rhalgr ];
           specialArgs = { inherit inputs outputs; };
         };
