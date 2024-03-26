@@ -15,14 +15,22 @@
   };
 
   home.packages = with pkgs; [ 
+    # CLI Tools
     sl
+
+    # IDEs
+    vscode
+    jetbrains.idea-ultimate
+
+    # Languages
+    dotnet-sdk_8
+
+    # Misc
     tidal-hifi
     obsidian
     megasync
     vesktop
-
-    # Languages
-    dotnet-sdk_8
+    jetbrains-mono
   ];
 
   programs.java.enable = true;
