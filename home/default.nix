@@ -1,4 +1,4 @@
-{ inputs, outputs, lib, config, pkgs, ... }: {
+{ inputs, pkgs, ... }: {
 
   nixpkgs.config = {
     allowUnfree = true;
@@ -18,12 +18,15 @@
     # CLI Tools
     sl
 
-    # IDEs
+    # Tools 
     vscode
     jetbrains.idea-ultimate
+    mongodb-compass
+    postman
 
     # Languages
     dotnet-sdk_8
+    go
 
     # Misc
     tidal-hifi

@@ -1,4 +1,4 @@
-{ inputs, outputs, lib, config, pkgs, ... }: {
+{ inputs, lib, config, pkgs, ... }: {
 
   imports = [
     inputs.home-manager.nixosModules.home-manager
@@ -107,6 +107,8 @@
     stow
     starship
     neofetch
+    lazygit
+    lazydocker
     
     # Misc
     firefox
@@ -119,7 +121,7 @@
   xdg.portal.enable = true;
 
   home-manager = {
-    extraSpecialArgs = { inherit inputs outputs; };
+    extraSpecialArgs = { inherit inputs; };
     users = {
       ryan = import ../../home;
     };
