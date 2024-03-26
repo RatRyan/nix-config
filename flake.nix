@@ -8,11 +8,12 @@
       url = "github:misterio77/home-manager/xdg-portal-update";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    hyprland.url = "github:hyprwm/Hyprland";
   };
 
   outputs = { self, nixpkgs, home-manager, ... } @ inputs:
     let
-      inherit (self) outputs;
       system = "x86_64-linux";
       lib = nixpkgs.lib;
     in {
@@ -20,12 +21,12 @@
         # Personal Desktop
         byregot = lib.nixosSystem {
           modules = [ ./hosts/byregot ];
-          specialArgs = { inherit inputs outputs; };
+          specialArgs = { inherit inputs; };
         };
         # School Laptop
         rhalgr = lib.nixosSystem {
           modules = [ ./hosts/rhalgr ];
-          specialArgs = { inherit inputs outputs; };
+          specialArgs = { inherit inputs; };
         };
       };
     };

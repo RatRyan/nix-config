@@ -1,5 +1,5 @@
-# My NixOS flake/configuration
-Wait, this distro is sick 🙂
+# nixos-config
+Cool Distro 🙂
 ## Notable Features
 - shared modules between desktop and thinkpad
 - cooler than arch 😎
