@@ -1,8 +1,4 @@
 { inputs, pkgs, ... }: {
-  imports = [
-    ./hyprland.nix
-  ];
-  
   nixpkgs.config = {
     allowUnfree = true;
     allowUnfreePredicate = _: true;
@@ -24,6 +20,7 @@
     # Tools 
     vscode
     jetbrains.idea-ultimate
+    jetbrains.rider
     mongodb-compass
     postman
 
@@ -38,9 +35,11 @@
     vesktop
   ];
 
-  programs.java.enable = true;
-  programs.neovim.enable = true;
-  programs.git.enable = true;
+  programs = {
+    java.enable = true;
+    neovim.enable = true;
+    git.enable = true;
+  };
 
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";
