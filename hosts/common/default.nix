@@ -4,7 +4,6 @@
     inputs.home-manager.nixosModules.home-manager
     ./docker.nix
     ./fonts.nix
-    ./fish.nix
     ./flatpak.nix
   ];
 
@@ -100,6 +99,7 @@
     wget
     git
     gh
+    fish
     btop
     zoxide
     fzf
