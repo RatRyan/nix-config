@@ -1,10 +1,9 @@
 { inputs, lib, config, pkgs, ... }: {
-
   imports = [
     inputs.home-manager.nixosModules.home-manager
     ./docker.nix
     ./fonts.nix
-    ./flatpak.nix
+    ./plasma.nix
   ];
 
   nixpkgs.config.allowUnfree = true;
@@ -38,8 +37,6 @@
     };
   };
 
-  services.envfs.enable = true;
-
   # Enable networking
   networking.networkmanager.enable = true;
 
@@ -66,11 +63,6 @@
     layout = "us";
     variant = "";
   };
-
-  # Enable the X11 windowing system.
-  services.xserver.enable = true;
-  services.xserver.displayManager.sddm.enable = true;
-  services.desktopManager.plasma6.enable = true;
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
@@ -119,6 +111,9 @@
   ];
 
   xdg.portal.enable = true;
+
+  services.envfs.enable = true;
+  services.flatpak.enable = true;
 
   home-manager = {
     extraSpecialArgs = { inherit inputs; };
