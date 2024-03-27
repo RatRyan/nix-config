@@ -1,9 +1,11 @@
 { inputs, lib, config, pkgs, ... }: {
   imports = [
     inputs.home-manager.nixosModules.home-manager
+    ./nvidia.nix
     ./docker.nix
     ./fonts.nix
     ./plasma.nix
+    ./hyprland.nix
   ];
 
   nixpkgs.config.allowUnfree = true;
