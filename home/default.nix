@@ -32,7 +32,7 @@
     tidal-hifi
     obsidian
     megasync
-    vesktop
+    discord-screenaudio
   ];
 
   programs = {
