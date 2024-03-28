@@ -5,7 +5,6 @@
     ./docker.nix
     ./fonts.nix
     ./plasma.nix
-    ./hyprland.nix
   ];
 
   nixpkgs.config.allowUnfree = true;
