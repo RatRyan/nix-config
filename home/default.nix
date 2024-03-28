@@ -33,6 +33,7 @@
     obsidian
     megasync
     discord-screenaudio
+    teams-for-linux
   ];
 
   programs = {

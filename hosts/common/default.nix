@@ -1,13 +1,13 @@
 { inputs, lib, config, pkgs, ... }: {
   imports = [
     inputs.home-manager.nixosModules.home-manager
-    ./nvidia.nix
     ./docker.nix
     ./fonts.nix
     ./plasma.nix
   ];
 
   nixpkgs.config.allowUnfree = true;
+  nixpkgs.config.allowUnsupportedSystem = true;
 
   nix.registry = (lib.mapAttrs (_: flake: {inherit flake;})) ((lib.filterAttrs (_: lib.isType "flake")) inputs);
 
@@ -114,7 +114,6 @@
   xdg.portal.enable = true;
 
   services.envfs.enable = true;
-  services.flatpak.enable = true;
 
   home-manager = {
     extraSpecialArgs = { inherit inputs; };
