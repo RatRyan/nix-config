@@ -1,4 +1,8 @@
 { inputs, pkgs, ... }: {
+  imports = [
+    ./hyprland
+  ];
+
   nixpkgs.config = {
     allowUnfree = true;
     allowUnfreePredicate = _: true;
@@ -21,6 +25,7 @@
     vscode
     jetbrains.idea-ultimate
     jetbrains.rider
+    jetbrains.clion
     mongodb-compass
     postman
 
@@ -33,6 +38,7 @@
     obsidian
     megasync
     discord-screenaudio
+    discord
     teams-for-linux
   ];
 
