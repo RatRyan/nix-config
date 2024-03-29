@@ -87,6 +87,8 @@
 
   # List packages installed in system profile
   environment.systemPackages = with pkgs; [
+    inputs.fh.packages.x86_64-linux.default
+
     # CLI tools
     vim
     wget

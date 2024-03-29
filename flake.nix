@@ -3,7 +3,6 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-
     fh.url = "https://flakehub.com/f/DeterminateSystems/fh/*.tar.gz";
 
     home-manager = {
