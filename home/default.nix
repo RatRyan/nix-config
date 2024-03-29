@@ -29,10 +29,6 @@
     mongodb-compass
     postman
 
-    # Languages
-    dotnet-sdk_8
-    go
-
     # Misc
     tidal-hifi
     obsidian
