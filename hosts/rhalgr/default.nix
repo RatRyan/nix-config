@@ -2,7 +2,7 @@
   imports = [
     ./hardware-configuration.nix
 
-    ../common
+    ../common/global
   ];
 
   networking.hostName = "rhalgr";
