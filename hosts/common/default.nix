@@ -92,6 +92,7 @@
     # CLI tools
     vim
     wget
+    unzip
     git
     gh
     fish
@@ -117,13 +118,6 @@
 
   services.envfs.enable = true;
 
-  home-manager = {
-    extraSpecialArgs = { inherit inputs; };
-    users = {
-      ryan = import ../../home;
-    };
-  };
-
   users.users = {
     ryan = {
       isNormalUser = true;
@@ -131,4 +125,13 @@
       extraGroups = ["wheel" "networkmanager" "docker"];
     };
   };
+
+  home-manager = {
+    extraSpecialArgs = { inherit inputs; };
+    users = {
+      ryan = import ../../home;
+    };
+  };
+
+  programs.nix-ld.enable = true;
 }
