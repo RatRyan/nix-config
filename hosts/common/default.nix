@@ -1,6 +1,7 @@
 { inputs, lib, config, pkgs, ... }: {
   imports = [
     inputs.home-manager.nixosModules.home-manager
+    ./bluetooth.nix
     ./docker.nix
     ./fonts.nix
     ./plasma.nix
@@ -105,6 +106,7 @@
     neofetch
     lazygit
     lazydocker
+    devenv
 
     # Misc
     firefox
