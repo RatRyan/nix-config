@@ -16,7 +16,6 @@
   home.packages = with pkgs; [ 
     # CLI Tools
     sl
-    devbox
 
     # Tools 
     vscode
@@ -36,8 +35,13 @@
   ];
 
   programs = {
-    neovim.enable = true;
     git.enable = true;
+    direnv = {
+      enable = true;
+      enableFishIntegration = true;
+      nix-direnv.enable = true;
+    };
+    neovim.enable = true;
   };
 
   # Nicely reload system units when changing configs

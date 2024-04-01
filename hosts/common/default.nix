@@ -106,7 +106,6 @@
     neofetch
     lazygit
     lazydocker
-    direnv
     
     # Misc
     firefox
