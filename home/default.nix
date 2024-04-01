@@ -16,6 +16,7 @@
   home.packages = with pkgs; [ 
     # CLI Tools
     sl
+    devbox
 
     # Tools 
     vscode
@@ -29,13 +30,12 @@
     tidal-hifi
     obsidian
     megasync
-    discord-screenaudio
     discord
+    discord-screenaudio
     teams-for-linux
   ];
 
   programs = {
-    java.enable = true;
     neovim.enable = true;
     git.enable = true;
   };
