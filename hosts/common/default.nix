@@ -107,6 +107,7 @@
     lazygit
     lazydocker
     devenv
+    cachix
 
     # Misc
     firefox
@@ -135,5 +136,6 @@
     };
   };
 
+  nix.settings.trusted-users = [ "root" "ryan" ];
   programs.nix-ld.enable = true;
 }
