@@ -90,7 +90,6 @@
     inputs.fh.packages.x86_64-linux.default
 
     # CLI tools
-    gcc
     vim
     wget
     unzip

@@ -25,13 +25,15 @@
     mongodb-compass
     postman
 
+    # Communication
+    discord
+    discord-screenaudio
+    teams-for-linux
+
     # Misc
     tidal-hifi
     obsidian
     megasync
-    discord
-    discord-screenaudio
-    teams-for-linux
   ];
 
   programs = {
