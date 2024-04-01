@@ -105,7 +105,7 @@
     neofetch
     lazygit
     lazydocker
-    
+
     # Misc
     firefox
     wezterm
