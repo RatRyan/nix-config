@@ -106,8 +106,6 @@
     neofetch
     lazygit
     lazydocker
-    devenv
-    cachix
 
     # Misc
     firefox

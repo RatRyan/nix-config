@@ -16,6 +16,8 @@
   home.packages = with pkgs; [ 
     # CLI Tools
     sl
+    devenv
+    cachix
 
     # Tools 
     vscode
