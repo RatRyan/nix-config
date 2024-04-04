@@ -16,16 +16,17 @@
   home.packages = with pkgs; [ 
     # CLI Tools
     sl
-    devenv
-    cachix
 
     # Tools 
     vscode
     jetbrains.idea-ultimate
     jetbrains.rider
     jetbrains.clion
+    jetbrains.datagrip
+    android-studio
     mongodb-compass
     postman
+    gparted
 
     # Communication
     discord

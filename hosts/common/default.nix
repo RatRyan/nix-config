@@ -106,6 +106,7 @@
     neofetch
     lazygit
     lazydocker
+    msbuild
 
     # Misc
     firefox
