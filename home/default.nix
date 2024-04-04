@@ -1,4 +1,8 @@
 { inputs, pkgs, ... }: {
+  imports = [
+    ./hyprland
+  ];
+
   nixpkgs.config = {
     allowUnfree = true;
     allowUnfreePredicate = _: true;
