@@ -130,13 +130,14 @@
     };
   };
 
+  programs = {
+    hyprland.enable = true;
+  };
+
   home-manager = {
     extraSpecialArgs = { inherit inputs; };
     users = {
       ryan = import ../../home;
     };
   };
-
-  nix.settings.trusted-users = [ "root" "ryan" ];
-  programs.nix-ld.enable = true;
 }
