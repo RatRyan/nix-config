@@ -116,6 +116,7 @@
     xclip
     wl-clipboard
     home-manager
+    tidal-hifi
   ];
 
   xdg.portal.enable = true;
@@ -132,6 +133,7 @@
 
   programs = {
     hyprland.enable = true;
+    steam.enable = true;
   };
 
   home-manager = {

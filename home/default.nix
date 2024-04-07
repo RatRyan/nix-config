@@ -27,7 +27,6 @@
     jetbrains.rider
     jetbrains.clion
     jetbrains.datagrip
-    android-studio
     mongodb-compass
     postman
     gparted
@@ -38,7 +37,6 @@
     teams-for-linux
 
     # Misc
-    tidal-hifi
     obsidian
     megasync
   ];
