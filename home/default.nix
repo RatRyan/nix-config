@@ -39,6 +39,7 @@
     # Misc
     obsidian
     megasync
+    tidal-hifi
   ];
 
   programs = {

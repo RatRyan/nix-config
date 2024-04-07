@@ -116,7 +116,6 @@
     xclip
     wl-clipboard
     home-manager
-    tidal-hifi
   ];
 
   xdg.portal.enable = true;
