@@ -3,7 +3,6 @@
     ./hardware-configuration.nix
 
     ../common
-    ../common/nvidia.nix
   ];
 
   networking.hostName = "byregot";
