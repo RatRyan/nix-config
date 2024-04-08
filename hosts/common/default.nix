@@ -8,6 +8,7 @@
     ./fonts.nix
     ./locale.nix
     ./nix.nix
+    ./nvidia.nix
     ./plasma.nix
   ];
 
