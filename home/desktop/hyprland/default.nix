@@ -1,5 +1,6 @@
-{
+{ pkgs, ... }:{
   imports = [
+    ./nm-applet.nix
     ./waybar.nix
   ];
 
