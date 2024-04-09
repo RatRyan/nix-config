@@ -76,7 +76,7 @@
 
         tray = {
           # "icon-size"= 21;
-          spacing = 10;
+          spacing = 2;
         };
 
         clock = {
