@@ -1,6 +1,5 @@
 { pkgs, ... }:{
   imports = [
-    ./nm-applet.nix
     ./waybar.nix
   ];
 
@@ -8,4 +7,8 @@
     source = ./hypr;
     recursive = true;
   };
+
+  home.packages = with pkgs; [
+    networkmanagerapplet
+  ];
 }
