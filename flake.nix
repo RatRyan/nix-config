@@ -9,6 +9,8 @@
       url = "github:misterio77/home-manager/xdg-portal-update";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    ags.url = "github:Aylur/ags";
   };
 
   outputs = { nixpkgs, ... } @ inputs: {

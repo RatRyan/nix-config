@@ -1,6 +1,7 @@
 { inputs, pkgs, ... }: {
 
   imports = [
+    inputs.ags.homeManagerModules.default
     ./desktop/hyprland
   ];
 
