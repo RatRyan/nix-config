@@ -1,7 +1,4 @@
 { inputs, pkgs, ... }: {
-  imports = [
-    ./hyprland
-  ];
 
   nixpkgs.config = {
     allowUnfree = true;
@@ -20,6 +17,8 @@
   home.packages = with pkgs; [ 
     # CLI Tools
     sl
+    pipes
+    wofi
 
     # Tools 
     vscode
@@ -50,6 +49,11 @@
       nix-direnv.enable = true;
     };
     neovim.enable = true;
+    kitty = {
+      enable = true;
+      theme = "Catppuccin-Mocha";
+      shellIntegration.enableFishIntegration = true;
+    };
   };
 
   # Nicely reload system units when changing configs
