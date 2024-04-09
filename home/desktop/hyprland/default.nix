@@ -9,8 +9,8 @@
     ".config/ags" = {
       source = ./ags;
       recursive = true;
-    }
-  }
+    };
+  };
 
   home.packages = with pkgs; [
     networkmanagerapplet
