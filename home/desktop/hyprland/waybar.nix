@@ -140,8 +140,8 @@
     style = ''
       * {
         border: none;
-        font-family: Noto Sans Mono;
-        font-size: 16px;
+        font-family: JetBrainsMono Nerd Font;
+        font-size: 14px;
       }
     '';
   };
