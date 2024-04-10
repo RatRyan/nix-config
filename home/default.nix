@@ -2,8 +2,6 @@
 
   imports = [
     inputs.ags.homeManagerModules.default
-    ./cli
-    ./desktop/hyprland
   ];
 
   nixpkgs.config = {
@@ -24,7 +22,6 @@
   home.packages = with pkgs; [ 
     # CLI Tools
     sl
-    pipes
     wofi
 
     # Tools 
