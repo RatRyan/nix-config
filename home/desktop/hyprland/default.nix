@@ -1,6 +1,6 @@
 { pkgs, ... }: {
   imports = [
-    ./gtk.nix
+    ../common/gtk.nix
     ./waybar.nix
   ];
 
@@ -19,6 +19,7 @@
     networkmanagerapplet
     blueman
     hyprpaper
+    hyprshot
     gnome.nautilus
   ];
 

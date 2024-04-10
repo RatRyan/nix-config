@@ -2,6 +2,8 @@
 
   imports = [
     inputs.ags.homeManagerModules.default
+    ./cli
+    ./desktop/hyprland
   ];
 
   nixpkgs.config = {
@@ -16,6 +18,7 @@
   home = {
     username = "ryan";
     homeDirectory = "/home/ryan";
+    stateVersion = "23.11";
   };
 
   home.packages = with pkgs; [ 
@@ -36,7 +39,6 @@
 
     # Communication
     discord
-    discord-screenaudio
     teams-for-linux
 
     # Misc
@@ -47,21 +49,9 @@
 
   programs = {
     git.enable = true;
-    direnv = {
-      enable = true;
-      enableFishIntegration = true;
-      nix-direnv.enable = true;
-    };
     neovim.enable = true;
-    kitty = {
-      enable = true;
-      theme = "Catppuccin-Mocha";
-      shellIntegration.enableFishIntegration = true;
-    };
   };
 
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";
-
-  home.stateVersion = "23.11";
 }
