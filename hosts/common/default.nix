@@ -60,6 +60,7 @@
   xdg.portal.enable = true;
 
   services.envfs.enable = true;
+  services.gnome.gnome-keyring.enable = true;
 
   users.users = {
     ryan = {

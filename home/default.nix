@@ -2,7 +2,6 @@
 
   imports = [
     inputs.ags.homeManagerModules.default
-    ./desktop/hyprland
   ];
 
   nixpkgs.config = {
