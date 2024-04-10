@@ -1,9 +1,4 @@
 { inputs, pkgs, ... }: {
-
-  imports = [
-    inputs.ags.homeManagerModules.default
-  ];
-
   nixpkgs.config = {
     allowUnfree = true;
     allowUnfreePredicate = _: true;
@@ -47,7 +42,7 @@
   programs = {
     git.enable = true;
     neovim.enable = true;
-    programs.direnv = {
+    direnv = {
       enable = true;
       nix-direnv.enable = true;
       enableFishIntegration = true;
