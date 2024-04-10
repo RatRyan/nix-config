@@ -47,6 +47,11 @@
   programs = {
     git.enable = true;
     neovim.enable = true;
+    programs.direnv = {
+      enable = true;
+      nix-direnv.enable = true;
+      enableFishIntegration = true;
+    };
   };
 
   # Nicely reload system units when changing configs
