@@ -18,6 +18,7 @@
   home.packages = with pkgs; [
     networkmanagerapplet
     blueman
+    hyprpaper
     gnome.nautilus
   ];
 
