@@ -1,4 +1,10 @@
 { inputs, pkgs, ... }: {
+
+  imports = [
+    # YOU BASTARD BETTER NOT UNCOMMENT THIS UNTIL YOUR DONE WITH WORK
+    # ./desktop/hyprland
+    ./desktop/plasma.nix
+  ];
   nixpkgs.config = {
     allowUnfree = true;
     allowUnfreePredicate = _: true;
