@@ -22,7 +22,6 @@
     # CLI Tools
     sl
     wofi
-    libsForQt5.bismuth
 
     # Tools 
     vscode
