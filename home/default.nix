@@ -30,10 +30,7 @@
     gparted
 
     # Communication
-    # discord is a quirky little application (I love electron :slight_smile:)
-    (pkgs.writeShellScriptBin "discord" ''
-      exec ${pkgs.discord}/bin/discord --enable-features=UseOzonePlatform --ozone-platform=wayland
-    '')
+    discord
     teams-for-linux
 
     # Misc
