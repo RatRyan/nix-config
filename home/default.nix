@@ -21,7 +21,7 @@
   home.packages = with pkgs; [ 
     # CLI Tools
     sl
-    wofi
+    devenv
 
     # Tools 
     vscode
@@ -32,7 +32,6 @@
     mongodb-compass
     postman
     gparted
-
 
     # Communication
     discord
