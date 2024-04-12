@@ -51,12 +51,18 @@
     xclip
     wl-clipboard
     home-manager
+
+    # Screw you microsoft
+    dotnet-sdk_8
+    omnisharp-roslyn
+    mono
+    msbuild
   ];
 
   xdg.portal.enable = true;
 
   services.envfs.enable = true;
-  services.gnome.gnome-keyring.enable = true;
+  services.flatpak.enable = true;
 
   users.users = {
     ryan = {

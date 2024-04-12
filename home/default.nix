@@ -33,6 +33,7 @@
     postman
     gparted
 
+
     # Communication
     discord
     teams-for-linux
