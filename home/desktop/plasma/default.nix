@@ -4,6 +4,7 @@
   ];
   programs.plasma = {
     enable = true;
+    overrideConfig = true;
     shortcuts = {
       "ActivityManager"."switch-to-activity-da31017e-d757-4e79-80e6-531b85087541" = [ ];
       "KDE Keyboard Layout Switcher"."Switch to Last-Used Keyboard Layout" = "Meta+Alt+L";
@@ -19,10 +20,10 @@
       "kmix"."increase_microphone_volume" = "Microphone Volume Up";
       "kmix"."increase_volume" = "Volume Up";
       "kmix"."increase_volume_small" = "Shift+Volume Up";
-      "kmix"."mic_mute" = ["" "Microphone Mute" "Meta+Volume Mute"];
+      "kmix"."mic_mute" = ["Microphone Mute" "Meta+Volume Mute"];
       "kmix"."mute" = "Volume Mute";
       "ksmserver"."Halt Without Confirmation" = [ ];
-      "ksmserver"."Lock Session" = ["" "Meta+L" "Screensaver"];
+      "ksmserver"."Lock Session" = ["Meta+L" "Screensaver"];
       "ksmserver"."Log Out" = "Ctrl+Alt+Del";
       "ksmserver"."Log Out Without Confirmation" = [ ];
       "ksmserver"."Reboot" = [ ];
@@ -34,7 +35,7 @@
       "kwin"."Decrease Opacity" = [ ];
       "kwin"."Edit Tiles" = "Meta+T";
       "kwin"."Expose" = "Ctrl+F9";
-      "kwin"."ExposeAll" = ["" "Ctrl+F10" "Launch (C)"];
+      "kwin"."ExposeAll" = ["Ctrl+F10" "Launch (C)"];
       "kwin"."ExposeClass" = "Ctrl+F7";
       "kwin"."ExposeClassCurrentDesktop" = [ ];
       "kwin"."Grid View" = "Meta+G";
@@ -60,7 +61,7 @@
       "kwin"."Switch Window Left" = "Meta+Alt+Left";
       "kwin"."Switch Window Right" = "Meta+Alt+Right";
       "kwin"."Switch Window Up" = "Meta+Alt+Up";
-      "kwin"."Switch to Desktop 1" = ["" "Meta+1" "Ctrl+F1"];
+      "kwin"."Switch to Desktop 1" = ["Meta+1" "Ctrl+F1"];
       "kwin"."Switch to Desktop 10" = [ ];
       "kwin"."Switch to Desktop 11" = [ ];
       "kwin"."Switch to Desktop 12" = [ ];
@@ -71,10 +72,10 @@
       "kwin"."Switch to Desktop 17" = [ ];
       "kwin"."Switch to Desktop 18" = [ ];
       "kwin"."Switch to Desktop 19" = [ ];
-      "kwin"."Switch to Desktop 2" = ["" "Meta+2" "Ctrl+F2"];
+      "kwin"."Switch to Desktop 2" = ["Meta+2" "Ctrl+F2"];
       "kwin"."Switch to Desktop 20" = [ ];
-      "kwin"."Switch to Desktop 3" = ["" "Ctrl+F3" "Meta+3"];
-      "kwin"."Switch to Desktop 4" = ["" "Meta+4" "Ctrl+F4"];
+      "kwin"."Switch to Desktop 3" = ["Ctrl+F3" "Meta+3"];
+      "kwin"."Switch to Desktop 4" = ["Meta+4" "Ctrl+F4"];
       "kwin"."Switch to Desktop 5" = [ ];
       "kwin"."Switch to Desktop 6" = [ ];
       "kwin"."Switch to Desktop 7" = [ ];
@@ -112,12 +113,12 @@
       "kwin"."Walk Through Windows of Current Application Alternative (Reverse)" = [ ];
       "kwin"."Window Above Other Windows" = [ ];
       "kwin"."Window Below Other Windows" = [ ];
-      "kwin"."Window Close" = ["" "Meta+Shift+Q" "Alt+F4"];
+      "kwin"."Window Close" = ["Meta+Shift+Q" "Alt+F4"];
       "kwin"."Window Fullscreen" = [ ];
       "kwin"."Window Grow Horizontal" = [ ];
       "kwin"."Window Grow Vertical" = [ ];
       "kwin"."Window Lower" = [ ];
-      "kwin"."Window Maximize" = ["" "Meta+F" "Meta+PgUp"];
+      "kwin"."Window Maximize" = ["Meta+F" "Meta+PgUp"];
       "kwin"."Window Maximize Horizontal" = [ ];
       "kwin"."Window Maximize Vertical" = [ ];
       "kwin"."Window Minimize" = "Meta+PgDown";
@@ -184,7 +185,7 @@
       "kwin"."Window to Screen 6" = [ ];
       "kwin"."Window to Screen 7" = [ ];
       "kwin"."view_actual_size" = "Meta+0";
-      "kwin"."view_zoom_in" = ["" "Meta++" "Meta+="];
+      "kwin"."view_zoom_in" = ["Meta++" "Meta+="];
       "kwin"."view_zoom_out" = "Meta+-";
       "mediacontrol"."mediavolumedown" = [ ];
       "mediacontrol"."mediavolumeup" = [ ];
@@ -206,7 +207,7 @@
       "org_kde_powerdevil"."Sleep" = "Sleep";
       "org_kde_powerdevil"."Toggle Keyboard Backlight" = "Keyboard Light On/Off";
       "org_kde_powerdevil"."Turn Off Screen" = [ ];
-      "org_kde_powerdevil"."powerProfile" = ["" "Battery" "Meta+B"];
+      "org_kde_powerdevil"."powerProfile" = ["Battery" "Meta+B"];
       "plasmashell"."activate task manager entry 1" = [ ];
       "plasmashell"."activate task manager entry 10" = [ ];
       "plasmashell"."activate task manager entry 2" = [ ];
@@ -259,9 +260,11 @@
       "kcminputrc"."Libinput/1267/12814/ELAN0687:00 04F3:320E Touchpad"."ScrollFactor".value = 2;
       "kcminputrc"."Mouse"."X11LibInputXAccelProfileFlat".value = true;
       "kcminputrc"."Tmp"."update_info".value = "delete_cursor_old_default_size.upd:DeleteCursorOldDefaultSize";
+      "kded5rc"."Module-browserintegrationreminder"."autoload".value = false;
       "kded5rc"."Module-device_automounter"."autoload".value = false;
       "kded5rc"."PlasmaBrowserIntegration"."shownCount".value = 2;
       "kdeglobals"."General"."AllowKDEAppsToRememberWindowPositions".value = true;
+      "kdeglobals"."General"."LastUsedCustomAccentColor".value = "104,107,111";
       "kdeglobals"."KDE"."SingleClick".value = true;
       "kdeglobals"."KFileDialog Settings"."Allow Expansion".value = false;
       "kdeglobals"."KFileDialog Settings"."Automatically select filename extension".value = true;
@@ -283,12 +286,12 @@
       "kdeglobals"."KFileDialog Settings"."View Style".value = "Simple";
       "kdeglobals"."KScreen"."ScaleFactor".value = 1.5;
       "kdeglobals"."KScreen"."ScreenScaleFactors".value = "eDP-1=1.5;HDMI-1=1.5;DP-1=1.5;DP-2=1.5;DP-3=1.5;DP-4=1.5;eDP-1-2=1.5;DP-1-5=1.5;HDMI-1-2=1.5;DP-1-6=1.5;";
-      "kdeglobals"."WM"."activeBackground".value = "51,51,51";
-      "kdeglobals"."WM"."activeBlend".value = "171,171,171";
-      "kdeglobals"."WM"."activeForeground".value = "252,252,252";
-      "kdeglobals"."WM"."inactiveBackground".value = "66,66,66";
-      "kdeglobals"."WM"."inactiveBlend".value = "85,85,85";
-      "kdeglobals"."WM"."inactiveForeground".value = "170,170,170";
+      "kdeglobals"."WM"."activeBackground".value = "30,30,32";
+      "kdeglobals"."WM"."activeBlend".value = "255,255,255";
+      "kdeglobals"."WM"."activeForeground".value = "170,170,172";
+      "kdeglobals"."WM"."inactiveBackground".value = "30,30,32";
+      "kdeglobals"."WM"."inactiveBlend".value = "154,169,200";
+      "kdeglobals"."WM"."inactiveForeground".value = "120,120,122";
       "kglobalshortcutsrc"."ActivityManager"."_k_friendly_name".value = "Activity Manager";
       "kglobalshortcutsrc"."KDE Keyboard Layout Switcher"."_k_friendly_name".value = "Keyboard Layout Switcher";
       "kglobalshortcutsrc"."kaccess"."_k_friendly_name".value = "Accessibility";
@@ -821,6 +824,8 @@
       "khotkeysrc"."WM"."inactiveBackground[$d]".value = "";
       "khotkeysrc"."WM"."inactiveBlend[$d]".value = "";
       "khotkeysrc"."WM"."inactiveForeground[$d]".value = "";
+      "kiorc"."Confirmations"."ConfirmEmptyTrash".value = true;
+      "krunnerrc"."General"."FreeFloating".value = true;
       "kwalletrc"."Wallet"."First Use".value = false;
       "kwinrc"."Desktops"."Id_1".value = "3f86d7fd-be89-4196-b279-bf3fe0160f06";
       "kwinrc"."Desktops"."Id_2".value = "4cf5ec31-91a9-4a47-a294-06d6734d90ed";
@@ -832,9 +837,13 @@
       "kwinrc"."Desktops"."Name_4".value = "Music";
       "kwinrc"."Desktops"."Number".value = 4;
       "kwinrc"."Desktops"."Rows".value = 1;
+      "kwinrc"."Effect-overview"."BorderActivate".value = 9;
       "kwinrc"."Effect-slide"."HorizontalGap".value = 0;
       "kwinrc"."Effect-slide"."SlideBackground".value = false;
       "kwinrc"."Effect-slide"."VerticalGap".value = 0;
+      "kwinrc"."Effect-windowview"."BorderActivateAll".value = 9;
+      "kwinrc"."ModifierOnlyShortcuts"."Meta".value = "org.kde.kglobalaccel,/component/kwin,org.kde.kglobalaccel.Component,invokeShortcut,Overview";
+      "kwinrc"."Plugins"."bismuthEnabled".value = true;
       "kwinrc"."Plugins"."desktopchangeosdEnabled".value = true;
       "kwinrc"."Plugins"."slideEnabled".value = false;
       "kwinrc"."Script-desktopchangeosd"."PopupHideDelay".value = 500;
@@ -846,6 +855,7 @@
       "kwinrc"."Tiling/d74d439a-fac8-58a7-ae6b-e6397e9a5641"."tiles".value = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
       "kwinrc"."Xwayland"."Scale".value = 1.5;
       "plasma-localerc"."Formats"."LANG".value = "en_US.UTF-8";
+      "plasmarc"."Theme"."name".value = "AppleDark-ALL-AccentDinamic";
       "plasmarc"."Wallpapers"."usersWallpapers".value = "/home/ryan/Pictures/wallpapers/65ad7072fca1848ff58a5d55_treescapes-I-03.jpg";
       "systemsettingsrc"."KFileDialog Settings"."detailViewIconSize".value = 16;
     };
