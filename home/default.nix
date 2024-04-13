@@ -22,6 +22,7 @@
     # CLI Tools
     sl
     devenv
+    cachix
 
     # Tools 
     vscode

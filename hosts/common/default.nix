@@ -1,15 +1,9 @@
 { inputs, lib, config, pkgs, ... }: {
   imports = [
     inputs.home-manager.nixosModules.home-manager
-    ./audio.nix
-    ./bluetooth.nix
-    ./bootloader.nix
-    ./docker.nix
-    ./fonts.nix
-    ./locale.nix
-    ./nix.nix
-    ./opengl.nix
-    ./plasma.nix
+    ./app
+    ./device
+    ./system
   ];
 
   nixpkgs.config.allowUnfree = true;
