@@ -1,4 +1,4 @@
-{
+{ lib, ... }: {
   imports = [
     ./hardware-configuration.nix
 
@@ -39,6 +39,7 @@
     };
   };
 
+  # Enable touchpad
   services.xserver.libinput.enable = true;
 
   powerManagement.powertop.enable = true;
