@@ -1,8 +1,4 @@
 { pkgs, ... }: {
-  imports = [
-    ./desktop/plasma
-  ];
-
   nixpkgs.config = {
     allowUnfree = true;
     allowUnfreePredicate = _: true;
