@@ -14,7 +14,7 @@
     stateVersion = "23.11";
   };
 
-  home.packages = with pkgs; [ 
+  home.packages = with pkgs; [
     # CLI Tools
     sl
     devenv
