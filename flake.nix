@@ -8,6 +8,12 @@
       url = "github:misterio77/home-manager/xdg-portal-update";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    plasma-manager = {
+      url = "github:pjones/plasma-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.home-manager.follows = "home-manager";
+    };
   };
 
   outputs = { nixpkgs, ... } @ inputs: {

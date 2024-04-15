@@ -38,6 +38,7 @@
     neofetch
     lazygit
     lazydocker
+    docker-compose
 
     # Misc
     firefox
