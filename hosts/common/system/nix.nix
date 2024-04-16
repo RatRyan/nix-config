@@ -4,8 +4,9 @@
     settings = {
       experimental-features = "nix-command flakes";
       auto-optimise-store = true;
-      substituters = [ "https://cache.nixos.org/" "https://hyprland.cachix.org" ];
-      trusted-public-keys = ["hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="];
+      substituters = [ "https://cache.nixos.org/" ];
+      trusted-substituters = [ https://cache.nixos.org https://alexeyraga.cachix.org ];
+      trusted-users = [ "root" "ryan" ];
       warn-dirty = false;
     };
     gc = {

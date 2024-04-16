@@ -24,7 +24,6 @@
     vscode
     jetbrains.idea-ultimate
     jetbrains.rider
-    jetbrains.clion
     jetbrains.datagrip
     mongodb-compass
     postman
