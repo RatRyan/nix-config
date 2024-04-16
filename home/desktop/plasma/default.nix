@@ -4,6 +4,21 @@
   ];
   programs.plasma = {
     enable = true;
+    overrideConfig = true;
+
+    workspace = {
+      clickItemTo = "select";
+      lookAndFeel = "org.kde.breezedark.desktop";
+      iconTheme = "Papirus-Dark";
+    };
+
+    panels = [
+      {
+        location = "top";
+        height = 26;
+      };
+    ];
+
     shortcuts = {
       kwin = {
         "Window Close" = ["Meta+Shift+Q" "Alt+F4"];
@@ -16,7 +31,7 @@
         "Window to Desktop 2" = "Meta+@";
         "Window to Desktop 3" = "Meta+#";
         "Window to Desktop 4" = "Meta+$";
-      }; 
+      };
     };
 
     configFile = {
