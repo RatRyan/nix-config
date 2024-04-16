@@ -16,7 +16,7 @@
       {
         location = "top";
         height = 26;
-      };
+      }
     ];
 
     shortcuts = {
