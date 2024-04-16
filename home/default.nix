@@ -1,4 +1,8 @@
 { pkgs, ... }: {
+  imports = [
+    ./desktop/plasma
+  ];
+
   nixpkgs.config = {
     allowUnfree = true;
     allowUnfreePredicate = _: true;
@@ -17,8 +21,8 @@
   home.packages = with pkgs; [
     # CLI Tools
     sl
-    devenv
     cachix
+    devenv
 
     # Tools 
     vscode
