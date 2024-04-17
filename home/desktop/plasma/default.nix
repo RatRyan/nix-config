@@ -9,6 +9,7 @@
     workspace = {
       clickItemTo = "select";
       lookAndFeel = "org.kde.breezedark.desktop";
+      iconTheme = "Papirus-Dark";
     };
 
     panels = [
