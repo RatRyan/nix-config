@@ -2,24 +2,24 @@
   imports = [
     inputs.plasma-manager.homeManagerModules.plasma-manager
   ];
+
   programs.plasma = {
     enable = true;
+    overrideConfig = true;
 
     workspace = {
-      clickItemTo = "select";
       lookAndFeel = "org.kde.breezedark.desktop";
       iconTheme = "Papirus";
     };
 
-    panels = [
-      {
-        location = "top";
-        height = 24;
-      }
-    ];
+    hotkeys.commands."launch-wezterm" = {
+      name = "Launch Wezterm";
+      key = "Meta+Return";
+      command = "wezterm";
+    };
 
     shortcuts = {
-      "kwin" = {
+      kwin = {
         "Window Close" = ["Meta+Shift+Q" "Alt+F4"];
         "Window Maximize" = ["Meta+F"];
         "Switch to Desktop 1" = ["Meta+1"];
@@ -31,7 +31,6 @@
         "Window to Desktop 3" = "Meta+#";
         "Window to Desktop 4" = "Meta+$";
       };
-      "services/org.wezfurlong.wezterm.desktop"."_launch" = "Meta+Return";
     };
 
     configFile = {
@@ -73,8 +72,6 @@
       "kdeglobals"."KFileDialog Settings"."Sort reversed".value = false;
       "kdeglobals"."KFileDialog Settings"."Speedbar Width".value = 138;
       "kdeglobals"."KFileDialog Settings"."View Style".value = "Simple";
-      "kdeglobals"."KScreen"."ScaleFactor".value = 1.5;
-      "kdeglobals"."KScreen"."ScreenScaleFactors".value = "eDP-1=1.5;HDMI-1=1.5;DP-1=1.5;DP-2=1.5;DP-3=1.5;DP-4=1.5;eDP-1-2=1.5;DP-1-5=1.5;HDMI-1-2=1.5;DP-1-6=1.5;";
       "kdeglobals"."WM"."activeBackground".value = "30,30,32";
       "kdeglobals"."WM"."activeBlend".value = "255,255,255";
       "kdeglobals"."WM"."activeForeground".value = "170,170,172";
@@ -632,16 +629,12 @@
       "kwinrc"."Effect-slide"."VerticalGap".value = 0;
       "kwinrc"."Effect-windowview"."BorderActivateAll".value = 9;
       "kwinrc"."ModifierOnlyShortcuts"."Meta".value = "org.kde.kglobalaccel,/component/kwin,org.kde.kglobalaccel.Component,invokeShortcut,Overview";
-      "kwinrc"."Plugins"."desktopchangeosdEnabled".value = true;
-      "kwinrc"."Plugins"."slideEnabled".value = false;
-      "kwinrc"."Script-desktopchangeosd"."PopupHideDelay".value = 500;
       "kwinrc"."Tiling"."padding".value = 4;
       "kwinrc"."Tiling/00072d4c-51db-5e54-9b8c-e8a6e4d2fcea"."tiles".value = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
       "kwinrc"."Tiling/213a9620-187e-58a6-b80b-85d8fb95dfce"."tiles".value = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
       "kwinrc"."Tiling/3c373409-48e0-57e9-a1a9-eb32e49f8772"."tiles".value = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
       "kwinrc"."Tiling/92e842d7-5928-5c43-884a-4912e7cc82ed"."tiles".value = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
       "kwinrc"."Tiling/d74d439a-fac8-58a7-ae6b-e6397e9a5641"."tiles".value = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
-      "kwinrc"."Xwayland"."Scale".value = 1.5;
       "plasma-localerc"."Formats"."LANG".value = "en_US.UTF-8";
       "systemsettingsrc"."KFileDialog Settings"."detailViewIconSize".value = 16;
     };
