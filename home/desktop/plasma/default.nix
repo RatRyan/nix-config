@@ -22,7 +22,7 @@
     ];
 
     shortcuts = {
-      kwin = {
+      "kwin" = {
         "Window Close" = ["Meta+Shift+Q" "Alt+F4"];
         "Window Maximize" = ["Meta+F"];
         "Switch to Desktop 1" = ["Meta+1"];
