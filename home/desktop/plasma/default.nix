@@ -16,8 +16,6 @@
       {
         location = "top";
         height = 24;
-        widgets = [
-        ];
       }
     ];
 
