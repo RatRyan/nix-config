@@ -9,13 +9,13 @@
     workspace = {
       clickItemTo = "select";
       lookAndFeel = "org.kde.breezedark.desktop";
-      iconTheme = "Papirus-Dark";
+      iconTheme = "Papirus";
     };
 
     panels = [
       {
         location = "top";
-        height = 26;
+        height = 24;
         widgets = [
         ];
       }
