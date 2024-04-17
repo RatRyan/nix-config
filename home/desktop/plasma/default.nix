@@ -1,7 +1,6 @@
 { inputs, ... }: {
   imports = [
     inputs.plasma-manager.homeManagerModules.plasma-manager
-    ./icons
   ];
 
   programs.plasma = {
