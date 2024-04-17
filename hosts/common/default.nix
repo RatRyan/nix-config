@@ -21,6 +21,10 @@
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
+  environment.sessionVariables = {
+    FLAKE = "/home/ryan/.nixos-config";
+  };
+
   environment.systemPackages = with pkgs; [
     # CLI tools
     vim
@@ -39,6 +43,7 @@
     lazygit
     lazydocker
     docker-compose
+    nh
 
     # Misc
     firefox
