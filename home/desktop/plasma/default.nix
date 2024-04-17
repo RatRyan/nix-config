@@ -34,6 +34,7 @@
         "Window to Desktop 3" = "Meta+#";
         "Window to Desktop 4" = "Meta+$";
       };
+      "services/org.wezfurlong.wezterm.desktop"."_launch" = "Meta+Return";
     };
 
     configFile = {
