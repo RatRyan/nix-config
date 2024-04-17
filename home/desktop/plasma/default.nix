@@ -4,7 +4,6 @@
   ];
   programs.plasma = {
     enable = true;
-    overrideConfig = true;
 
     workspace = {
       clickItemTo = "select";
