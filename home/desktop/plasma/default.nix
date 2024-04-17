@@ -12,6 +12,13 @@
       iconTheme = "Papirus";
     };
 
+    panels = [
+      {
+        location = "top";
+        height = 24;
+      }
+    ];
+
     shortcuts = {
       "kwin" = {
         "Window Close" = ["Meta+Shift+Q" "Alt+F4"];
