@@ -23,6 +23,7 @@
     sl
     cachix
     devenv
+    go
 
     # Tools 
     vscode
