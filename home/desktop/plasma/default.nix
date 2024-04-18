@@ -5,11 +5,27 @@
 
   programs.plasma = {
     enable = true;
+    overrideConfig = true;
 
     workspace = {
       lookAndFeel = "org.kde.breezedark.desktop";
       iconTheme = "Papirus";
     };
+
+    panels = [
+      {
+        location = "top";
+        height = 26;
+        widgets = [
+          "org.kde.plasma.windowList"
+          "org.kde.plasma.appmenu"
+          "org.kde.plasma.panelspacer"
+          "org.kde.plasma.digitalclock"
+          "org.kde.plasma.panelspacer"
+          "org.kde.plasma.systemtray"
+        ];
+      }
+    ];
 
     hotkeys.commands."launch-wezterm" = {
       name = "Launch Wezterm";
