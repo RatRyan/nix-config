@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    hardware.url = "github:nixos/nixos-hardware";
 
     home-manager = {
       url = "github:misterio77/home-manager/xdg-portal-update";
