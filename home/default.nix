@@ -1,7 +1,7 @@
 { pkgs, ... }: {
-#  imports = [
-#    ./desktop/plasma
-#  ];
+  imports = [
+    ./desktop/plasma
+  ];
 
   nixpkgs.config = {
     allowUnfree = true;
