@@ -18,8 +18,9 @@
     variant = "";
   };
 
-  # Enable CUPS to print documents.
   services.printing.enable = true;
+  services.envfs.enable = true;
+  services.flatpak.enable = true;
 
   environment.sessionVariables = {
     FLAKE = "/home/ryan/.nixos-config";
@@ -59,10 +60,9 @@
     msbuild
   ];
 
-  xdg.portal.enable = true;
-
-  services.envfs.enable = true;
-  services.flatpak.enable = true;
+  programs = {
+    steam.enable = true;
+  };
 
   users.users = {
     ryan = {
@@ -70,10 +70,6 @@
       description = "Ryan Ratajczak";
       extraGroups = ["wheel" "networkmanager" "docker"];
     };
-  };
-
-  programs = {
-    steam.enable = true;
   };
 
   home-manager = {
