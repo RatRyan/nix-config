@@ -24,6 +24,7 @@
 
   environment.sessionVariables = {
     FLAKE = "/home/ryan/.nixos-config";
+    NIXOS_OZONE_WL = "1";
   };
 
   environment.systemPackages = with pkgs; [
