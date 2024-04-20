@@ -36,6 +36,7 @@
 
     # Communication
     discord
+    vesktop
     teams-for-linux
 
     # Misc
@@ -46,12 +47,19 @@
 
   programs = {
     git.enable = true;
-    neovim.enable = true;
     direnv = {
       enable = true;
       nix-direnv.enable = true;
       enableFishIntegration = true;
     };
+    neovim.enable = true;
+    emacs = {
+      enable = true;
+    };
+  };
+
+  services = {
+    emacs.enable = true;
   };
 
   # Nicely reload system units when changing configs
