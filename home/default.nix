@@ -23,7 +23,6 @@
     sl
     cachix
     devenv
-    go
 
     # Tools 
     vscode
@@ -31,7 +30,7 @@
     jetbrains.rider
     jetbrains.datagrip
     mongodb-compass
-    postman
+    bruno
     gparted
 
     # Communication
