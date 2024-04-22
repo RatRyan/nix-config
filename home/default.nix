@@ -30,8 +30,7 @@
     jetbrains.rider
     jetbrains.datagrip
     mongodb-compass
-    bruno
-    gparted
+    insomnia
 
     # Communication
     discord
@@ -52,9 +51,6 @@
       enableFishIntegration = true;
     };
     neovim.enable = true;
-    emacs = {
-      enable = true;
-    };
   };
 
   services = {
