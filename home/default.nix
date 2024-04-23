@@ -31,6 +31,7 @@
     jetbrains.datagrip
     mongodb-compass
     insomnia
+    obs-studio
 
     # Communication
     discord
