@@ -23,7 +23,6 @@
     sl
     cachix
     devenv
-    go
 
     # Tools 
     vscode
@@ -31,11 +30,12 @@
     jetbrains.rider
     jetbrains.datagrip
     mongodb-compass
-    postman
-    gparted
+    insomnia
+    obs-studio
 
     # Communication
     discord
+    vesktop
     teams-for-linux
 
     # Misc
@@ -46,12 +46,16 @@
 
   programs = {
     git.enable = true;
-    neovim.enable = true;
     direnv = {
       enable = true;
       nix-direnv.enable = true;
       enableFishIntegration = true;
     };
+    neovim.enable = true;
+  };
+
+  services = {
+    emacs.enable = true;
   };
 
   # Nicely reload system units when changing configs

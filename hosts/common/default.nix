@@ -31,6 +31,7 @@
     # CLI tools
     vim
     wget
+    gnumake
     unzip
     git
     gh
