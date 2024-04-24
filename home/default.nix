@@ -23,6 +23,7 @@
     sl
     cachix
     devenv
+    tmux
 
     # Tools 
     vscode
