@@ -40,7 +40,7 @@
   };
 
   # Enable touchpad
-  services.xserver.libinput.enable = true;
+  services.libinput.enable = true;
 
   powerManagement.powertop.enable = true;
 

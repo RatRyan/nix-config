@@ -28,6 +28,7 @@
     # Tools 
     vscode
     jetbrains.idea-ultimate
+    jetbrains.clion
     jetbrains.rider
     jetbrains.datagrip
     mongodb-compass
