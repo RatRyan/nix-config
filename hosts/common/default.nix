@@ -45,7 +45,6 @@
     neofetch
     lazygit
     lazydocker
-    docker-compose
     nh
 
     # Misc

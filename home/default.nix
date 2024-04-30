@@ -28,6 +28,7 @@
     # Tools 
     vscode
     jetbrains.idea-ultimate
+    jetbrains.clion
     jetbrains.rider
     jetbrains.datagrip
     mongodb-compass
@@ -53,10 +54,6 @@
       enableFishIntegration = true;
     };
     neovim.enable = true;
-  };
-
-  services = {
-    emacs.enable = true;
   };
 
   # Nicely reload system units when changing configs
