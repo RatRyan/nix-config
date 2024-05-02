@@ -56,10 +56,10 @@
     home-manager
 
     # Screw you microsoft
-    dotnet-sdk_8
-    omnisharp-roslyn
-    mono
-    msbuild
+    # dotnet-sdk_8
+    # omnisharp-roslyn
+    # mono
+    # msbuild
   ];
 
   programs = {
