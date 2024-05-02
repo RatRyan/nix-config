@@ -50,6 +50,12 @@
     xclip
     wl-clipboard
     home-manager
+
+    # I hate you microsoft
+    dotnet-sdk_8
+    omnisharp-roslyn
+    mono
+    msbuild
   ];
 
   users.users = {
