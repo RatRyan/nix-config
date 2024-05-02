@@ -46,6 +46,7 @@
     lazygit
     lazydocker
     nh
+    nixd
 
     # Misc
     firefox
