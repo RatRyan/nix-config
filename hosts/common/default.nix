@@ -31,6 +31,8 @@
     # CLI tools
     vim
     wget
+    nixpkgs-fmt
+    nixd
     gnumake
     unzip
     git
@@ -46,7 +48,6 @@
     lazygit
     lazydocker
     nh
-    nixd
 
     # Misc
     firefox
