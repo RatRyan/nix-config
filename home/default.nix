@@ -33,7 +33,14 @@
     jetbrains.datagrip
     mongodb-compass
     insomnia
+    postman
+    obsidian
     obs-studio
+
+    # Languages/Language Tools
+    nodejs_20
+    lua
+    gopls
 
     # Communication
     discord
@@ -41,7 +48,6 @@
     teams-for-linux
 
     # Misc
-    obsidian
     megasync
     tidal-hifi
   ];

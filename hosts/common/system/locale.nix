@@ -1,5 +1,4 @@
 {
-  # Time Zone
   time.timeZone = "America/Denver";
 
   # Select internationalisation properties.

@@ -1,4 +1,4 @@
-{ inputs, lib, ... }: {
+{ lib, ... }: {
   imports = [
     ./hardware-configuration.nix
 
@@ -16,7 +16,7 @@
     enable = true;
     keyboards = {
       default = {
-        ids = ["*"];
+        ids = [ "*" ];
         settings = {
           main = {
             capslock = "overload(nav, backspace)";
