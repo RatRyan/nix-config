@@ -38,7 +38,6 @@
     gnumake
     unzip
     gh
-    fish
     zoxide
     fzf
     eza
@@ -57,12 +56,15 @@
     mono
     msbuild
   ];
+  
+  programs.fish.enable = true;
 
   users.users = {
     ryan = {
       isNormalUser = true;
       description = "Ryan Ratajczak";
       extraGroups = [ "wheel" "networkmanager" "docker" "video" ];
+      shell = pkgs.fish;
     };
   };
 
