@@ -28,7 +28,6 @@
     # Tools 
     vscode
     jetbrains.idea-ultimate
-    jetbrains.clion
     jetbrains.rider
     jetbrains.datagrip
     mongodb-compass
@@ -36,11 +35,6 @@
     postman
     obsidian
     obs-studio
-
-    # Languages/Language Tools
-    nodejs_20
-    lua
-    gopls
 
     # Communication
     discord
