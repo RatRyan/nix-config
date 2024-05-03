@@ -54,6 +54,9 @@
       enableFishIntegration = true;
     };
     neovim.enable = true;
+    tmux = {
+      enable = true;
+    };
   };
 
   # Nicely reload system units when changing configs
