@@ -11,10 +11,11 @@
 
   networking.networkmanager.enable = true;
 
-  services.xserver.xkb.layout = "us";
-  services.printing.enable = true;
-  services.envfs.enable = true;
-  services.flatpak.enable = true;
+  services = {
+    xserver.xkb.layout = "us";
+    printing.enable = true;
+    envfs.enable = true;
+  };
 
   environment.sessionVariables = {
     FLAKE = "/home/ryan/.nixos-config";
@@ -22,33 +23,32 @@
   };
 
   environment.systemPackages = with pkgs; [
-    # CLI tools
     vim
-    nodejs
+    firefox
     wget
-    nixpkgs-fmt
+    neofetch
+    git
+    btop
+  ];
+
+  environment.defaultPackages = with pkgs; [
+    nh # only used for the search functionallity
     nixd
+    nixpkgs-fmt
     gnumake
     unzip
-    git
     gh
     fish
-    btop
     zoxide
     fzf
     eza
     stow
     starship
-    neofetch
     lazygit
     lazydocker
-    nh
-
-    # Misc
-    firefox
-    wezterm
     xclip
     wl-clipboard
+    wezterm
     home-manager
 
     # I hate you microsoft
@@ -62,7 +62,7 @@
     ryan = {
       isNormalUser = true;
       description = "Ryan Ratajczak";
-      extraGroups = [ "wheel" "networkmanager" "docker" ];
+      extraGroups = [ "wheel" "networkmanager" "docker" "video" ];
     };
   };
 
