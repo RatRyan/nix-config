@@ -58,6 +58,7 @@
   ];
   
   programs.fish.enable = true;
+  programs.steam.enable = true;
 
   users.users = {
     ryan = {

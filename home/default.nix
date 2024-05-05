@@ -29,6 +29,7 @@
     vscode
     jetbrains.idea-ultimate
     jetbrains.rider
+    jetbrains.goland
     jetbrains.datagrip
     mongodb-compass
     insomnia
