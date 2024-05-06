@@ -1,6 +1,6 @@
 { pkgs, ... }: {
   imports = [
-    ./desktop/plasma
+    ./plasma
   ];
 
   nixpkgs.config = {
@@ -23,7 +23,6 @@
     cachix
     devenv
     megasync
-    gopls
   ] ++ (lib.optionals (stdenv.isLinux)) [
     vscode
     jetbrains.idea-ultimate
@@ -51,10 +50,7 @@
       enable = true;
       nix-direnv.enable = true;
     };
-    fish = {
-      enable = true;
-      interactiveShellInit = builtins.readFile ./config.fish;
-    };
+    fish.interactiveShellInit = builtins.readFile ./config.fish;
   };
 
   # Nicely reload system units when changing configs

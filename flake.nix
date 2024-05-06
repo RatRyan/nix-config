@@ -17,17 +17,17 @@
     };
   };
 
-  outputs = { nixpkgs, home-manager, ... } @ inputs: {
+  outputs = { nixpkgs, ... } @ inputs: {
     nixosConfigurations = {
       # Personal Desktop
       byregot = nixpkgs.lib.nixosSystem {
         modules = [ ./hosts/byregot ];
-        specialArgs = { inherit inputs home-manager; };
+        specialArgs = { inherit inputs; };
       };
       # School Laptop
       rhalgr = nixpkgs.lib.nixosSystem {
         modules = [ ./hosts/rhalgr ];
-        specialArgs = { inherit inputs home-manager; };
+        specialArgs = { inherit inputs; };
       };
     };
   };
