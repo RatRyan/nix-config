@@ -1,7 +1,6 @@
 { lib, pkgs, ... }: {
   imports = [
     ./desktop/plasma
-    ./programs
   ];
 
   nixpkgs.config = {
