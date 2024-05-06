@@ -50,7 +50,10 @@
       enable = true;
       nix-direnv.enable = true;
     };
-    fish.interactiveShellInit = builtins.readFile ./config.fish;
+    fish = {
+      enable = true;
+      interactiveShellInit = builtins.readFile ./config.fish;
+    };
   };
 
   # Nicely reload system units when changing configs
