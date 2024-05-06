@@ -45,6 +45,11 @@
   programs = {
     git.enable = true;
     neovim.enable = true;
+    direnv = {
+      enable = true;
+      nix-direnv.enable = true;
+      enableFishIntegration = true;
+    };
     fish = {
       enable = true;
       interactiveShellInit = builtins.readFile ./config.fish;
