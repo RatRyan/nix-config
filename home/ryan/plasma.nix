@@ -17,8 +17,9 @@
         widgets = [
           "org.kde.plasma.appmenu"
           "org.kde.plasma.panelspacer"
-          "org.kde.plasma.systemtray"
           "org.kde.plasma.digitalclock"
+          "org.kde.plasma.panelspacer"
+          "org.kde.plasma.systemtray"
         ];
       }
     ];
