@@ -1,6 +1,6 @@
 { pkgs, ... }: {
   services.xserver = {
-    displayManager.sddm.wayland.enable = true;
+    displayManager.gdm.wayland.enable = true;
     desktopManager.gnome.enable = true;
     desktopManager.plasma6.enable = true;
   };
