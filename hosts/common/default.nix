@@ -56,7 +56,7 @@
     mono
     msbuild
   ];
-  
+
   programs.fish.enable = true;
   programs.steam.enable = true;
 
@@ -72,7 +72,7 @@
   home-manager = {
     extraSpecialArgs = { inherit inputs; };
     users = {
-      ryan = import ../../home;
+      ryan = import ../../home/ryan;
     };
   };
 }

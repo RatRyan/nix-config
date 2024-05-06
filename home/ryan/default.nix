@@ -1,4 +1,4 @@
-{ lib, pkgs, ... }: {
+{ pkgs, ... }: {
   imports = [
     ./desktop/plasma
   ];
@@ -23,6 +23,7 @@
     cachix
     devenv
     megasync
+    gopls
   ] ++ (lib.optionals (stdenv.isLinux)) [
     vscode
     jetbrains.idea-ultimate
@@ -34,6 +35,7 @@
     postman
     obsidian
     obs-studio
+    krita
 
     discord
     vesktop
@@ -48,7 +50,6 @@
     direnv = {
       enable = true;
       nix-direnv.enable = true;
-      enableFishIntegration = true;
     };
     fish = {
       enable = true;
