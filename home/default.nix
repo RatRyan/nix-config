@@ -23,7 +23,6 @@
     sl
     cachix
     devenv
-    tmux
 
     # Tools 
     vscode
@@ -49,15 +48,7 @@
 
   programs = {
     git.enable = true;
-    direnv = {
-      enable = true;
-      nix-direnv.enable = true;
-      enableFishIntegration = true;
-    };
     neovim.enable = true;
-    tmux = {
-      enable = true;
-    };
   };
 
   # Nicely reload system units when changing configs
