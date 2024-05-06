@@ -1,5 +1,6 @@
-{ inputs, pkgs, home-manager, ... }: {
+{ inputs, pkgs, ... }: {
   imports = [
+    inputs.home-manager.nixosModules.home-manager
     ./app
     ./device
     ./system
@@ -28,9 +29,7 @@
     neofetch
     git
     btop
-  ];
 
-  environment.defaultPackages = with pkgs; [
     nh # only used for the search functionallity
     nixd
     nixpkgs-fmt
