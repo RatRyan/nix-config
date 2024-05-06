@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{ lib, pkgs, ... }: {
   imports = [
     ./desktop/plasma
     ./programs
@@ -20,12 +20,11 @@
   };
 
   home.packages = with pkgs; [
-    # CLI Tools
     sl
     cachix
     devenv
-
-    # Tools 
+    megasync
+  ] ++ (lib.optionals (stdenv.isLinux)) [
     vscode
     jetbrains.idea-ultimate
     jetbrains.rider
@@ -37,19 +36,20 @@
     obsidian
     obs-studio
 
-    # Communication
     discord
     vesktop
     teams-for-linux
 
-    # Misc
-    megasync
     tidal-hifi
   ];
 
   programs = {
     git.enable = true;
     neovim.enable = true;
+    fish = {
+      enable = true;
+      interactiveShellInit = builtins.readFile ./config.fish;
+    };
   };
 
   # Nicely reload system units when changing configs
