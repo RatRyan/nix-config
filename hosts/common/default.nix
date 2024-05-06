@@ -1,6 +1,5 @@
-{ inputs, pkgs, ... }: {
+{ inputs, pkgs, home-manager, ... }: {
   imports = [
-    inputs.home-manager.nixosModules.home-manager
     ./app
     ./device
     ./system
