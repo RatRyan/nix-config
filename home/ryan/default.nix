@@ -1,6 +1,6 @@
 { pkgs, ... }: {
   imports = [
-    ./plasma
+    ./plasma.nix
   ];
 
   nixpkgs.config = {
