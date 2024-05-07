@@ -54,6 +54,10 @@
       enable = true;
       interactiveShellInit = builtins.readFile ./config.fish;
     };
+    wezterm = {
+      enable = true;
+      extraConfig = builtins.readFile ./.wezterm.lua;
+    };
   };
 
   # Nicely reload system units when changing configs

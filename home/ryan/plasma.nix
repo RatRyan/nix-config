@@ -32,12 +32,12 @@
 
     shortcuts = {
       kwin = {
-        "Window Close" = ["Meta+Shift+Q" "Alt+F4"];
-        "Window Maximize" = ["Meta+F"];
-        "Switch to Desktop 1" = ["Meta+1"];
-        "Switch to Desktop 2" = ["Meta+2"];
-        "Switch to Desktop 3" = ["Meta+3"];
-        "Switch to Desktop 4" = ["Meta+4"];
+        "Window Close" = [ "Meta+Shift+Q" "Alt+F4" ];
+        "Window Maximize" = "Meta+F";
+        "Switch to Desktop 1" = "Meta+1";
+        "Switch to Desktop 2" = "Meta+2";
+        "Switch to Desktop 3" = "Meta+3";
+        "Switch to Desktop 4" = "Meta+4";
         "Window to Desktop 1" = "Meta+!";
         "Window to Desktop 2" = "Meta+@";
         "Window to Desktop 3" = "Meta+#";
@@ -651,7 +651,7 @@
       "kwinrc"."Tiling/d74d439a-fac8-58a7-ae6b-e6397e9a5641"."tiles".value = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
       "kwinrc"."Xwayland"."Scale".value = 1.5;
       "plasma-localerc"."Formats"."LANG".value = "en_US.UTF-8";
-      "plasmarc"."Wallpapers"."usersWallpapers".value = "/home/ryan/Pictures/wallpapers/65ad6ffbb9187368a08b9457_treescapes-I-15.jpg";
+      "plasmarc"."Wallpapers"."usersWallpapers".value = "/home/ryan/Pictures/wallpapers";
       "systemsettingsrc"."KFileDialog Settings"."detailViewIconSize".value = 16;
     };
   };
