@@ -23,6 +23,19 @@
     cachix
     devenv
     megasync
+
+    # Languages
+    gcc
+    cmake
+    nodejs
+    go
+    openjdk22
+
+    # Language tools
+    gopls
+    gtest
+
+
   ] ++ (lib.optionals (stdenv.isLinux)) [
     vscode
     jetbrains.idea-ultimate
@@ -44,7 +57,11 @@
   ];
 
   programs = {
-    git.enable = true;
+    git = {
+      enable = true;
+      userEmail = "ryantratajczak@gmail.com";
+      userName = "RatRyan";
+    };
     neovim.enable = true;
     direnv = {
       enable = true;
