@@ -1,4 +1,4 @@
-{ inputs, ... }: {
+{ inputs, pkgs, ... }: {
   imports = [
     inputs.plasma-manager.homeManagerModules.plasma-manager
   ];
@@ -6,8 +6,11 @@
   programs.plasma = {
     enable = true;
 
+    home.packages = [ pkgs.papirus-icon-theme ];
+
     workspace = {
       lookAndFeel = "org.kde.breezedark.desktop";
+      iconTheme = "Papirus-Dark";
     };
 
     panels = [
