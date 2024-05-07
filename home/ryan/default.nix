@@ -35,7 +35,6 @@
     gopls
     gtest
 
-
   ] ++ (lib.optionals (stdenv.isLinux)) [
     vscode
     jetbrains.idea-ultimate
