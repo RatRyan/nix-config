@@ -76,7 +76,7 @@
     };
     starship = {
       enable = true;
-      settings = import ./starship.toml;
+      settings = builtins.fromTOML (builtins.readFile ./starship.toml);
     };
   };
 
