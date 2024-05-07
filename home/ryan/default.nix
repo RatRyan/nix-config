@@ -74,6 +74,10 @@
       enable = true;
       extraConfig = builtins.readFile ./.wezterm.lua;
     };
+    starship = {
+      enable = true;
+      settings = import ./starship.toml;
+    };
   };
 
   # Nicely reload system units when changing configs
