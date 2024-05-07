@@ -3,10 +3,11 @@
     inputs.plasma-manager.homeManagerModules.plasma-manager
   ];
 
+  home.packages = [ pkgs.papirus-icon-theme ];
+
   programs.plasma = {
     enable = true;
 
-    home.packages = [ pkgs.papirus-icon-theme ];
 
     workspace = {
       lookAndFeel = "org.kde.breezedark.desktop";
