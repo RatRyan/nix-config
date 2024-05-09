@@ -23,6 +23,7 @@
     cachix
     devenv
     megasync
+    firefox-devedition
 
     # Languages
     gcc
