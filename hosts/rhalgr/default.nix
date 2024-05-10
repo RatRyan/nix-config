@@ -7,10 +7,7 @@
 
   networking.hostName = "rhalgr";
 
-  services.xserver.xkb = {
-    layout = lib.mkForce "us";
-    variant = lib.mkForce "colemak_dh_wide";
-  };
+  services.xserver.xkb.variant = lib.mkForce "colemak_dh";
 
   services.keyd = {
     enable = true;
