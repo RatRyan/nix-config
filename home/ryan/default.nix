@@ -42,6 +42,7 @@
     jetbrains.rider
     jetbrains.goland
     jetbrains.datagrip
+    jetbrains.webstorm
     mongodb-compass
     insomnia
     postman
