@@ -8,7 +8,6 @@
   networking.hostName = "rhalgr";
 
   services.xserver.xkb.variant = lib.mkForce "colemak_dh";
-
   services.keyd = {
     enable = true;
     keyboards = {
