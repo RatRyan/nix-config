@@ -23,16 +23,16 @@
           };
           nav = {
             q = "escape";
-            k = "left";
-            l = "down";
-            o = "up";
-            ";" = "right";
-            j = "pagedown";
-            u = "pageup";
-            i = "home";
-            p = "end";
-            "[" = "delete";
-            "'" = "backspace";
+            j = "left";
+            k = "down";
+            i = "up";
+            l = "right";
+            h = "pagedown";
+            y = "pageup";
+            u = "home";
+            o = "end";
+            p = "delete";
+            ";" = "backspace";
           };
         };
       };

@@ -66,6 +66,7 @@
       shell = pkgs.fish;
     };
   };
+  users.extraGroups.vboxusers.members = [ "ryan" ];
 
   home-manager = {
     extraSpecialArgs = { inherit inputs; };
