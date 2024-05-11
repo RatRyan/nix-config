@@ -48,7 +48,6 @@
     postman
     obsidian
     obs-studio
-    krita
 
     discord
     vesktop
