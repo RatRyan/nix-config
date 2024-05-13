@@ -23,7 +23,6 @@
     cachix
     devenv
     megasync
-    firefox-devedition
 
     # Languages
     gcc
@@ -48,6 +47,8 @@
     postman
     obsidian
     obs-studio
+    firefox-devedition
+    kdenlive
 
     discord
     vesktop
