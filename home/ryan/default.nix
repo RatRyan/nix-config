@@ -30,6 +30,7 @@
     nodejs
     go
     openjdk22
+    elixir
 
     # Language tools
     gopls
