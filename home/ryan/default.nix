@@ -31,6 +31,7 @@
     go
     openjdk22
     elixir
+    elixir-ls
 
     # Language tools
     gopls

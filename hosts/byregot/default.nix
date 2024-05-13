@@ -1,8 +1,5 @@
-{ inputs, config, ... }: {
+{ config, ... }: {
   imports = [
-    inputs.hardware.nixosModules.common-cpu-amd
-    inputs.hardware.nixosModules.common-gpu-nvidia-nonprime
-    inputs.hardware.nixosModules.common-pc-ssd
     ./hardware-configuration.nix
 
     ../common
