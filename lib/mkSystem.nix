@@ -1,4 +1,4 @@
-{ nixpkgs, inputs }: name: { system, user }: 
+{ nixpkgs, inputs }: name: { system, user, extraModules ? [{}] }: 
 let
   hardwareConfig = ../hosts/${user}/hardware-configuration.nix;
   systemConfig = ../hosts/${user}/configuration.nix;
@@ -14,6 +14,7 @@ in
         home-manager.useUserPackages = true;
         home-manager.users.${user} = import homeConfig;
       }
-    ];
+    ] ++ extraModules;
+    specialArgs = { inherit inputs; };
   }
       

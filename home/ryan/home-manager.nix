@@ -32,6 +32,7 @@
     openjdk22
     elixir
     elixir-ls
+    nixd
 
     # Language tools
     gopls
