@@ -46,7 +46,6 @@
     mongodb-compass
     insomnia
     postman
-    obsidian
     obs-studio
     firefox-devedition
     kdenlive
