@@ -21,18 +21,17 @@
   home.packages = with pkgs; [
     sl
     cachix
-    devenv
     megasync
 
     # Languages
     gcc
-    cmake
     nodejs
     go
     openjdk22
     elixir
 
     # Language tools
+    cmake
     gopls
     gtest
     elixir-ls
@@ -47,11 +46,9 @@
     insomnia
     postman
     obs-studio
-    firefox-devedition
-    kdenlive
+    obsidian
 
     discord
-    vesktop
     teams-for-linux
 
     tidal-hifi
