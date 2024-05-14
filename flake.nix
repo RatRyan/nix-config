@@ -16,7 +16,7 @@
     };
   };
 
-  outputs = { nixpkgs, ... } @ inputs: {
+  outputs = { nixpkgs, ... }@inputs: {
     nixosConfigurations = {
       # Personal Desktop
       byregot = nixpkgs.lib.nixosSystem {
