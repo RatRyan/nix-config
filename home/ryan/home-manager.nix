@@ -31,14 +31,12 @@
     go
     openjdk22
     elixir
-    elixir-ls
-    nixd
 
     # Language tools
     gopls
     gtest
+    elixir-ls
 
-  ] ++ (lib.optionals (stdenv.isLinux)) [
     vscode
     jetbrains.idea-ultimate
     jetbrains.rider
@@ -83,13 +81,6 @@
       enable = true;
       settings = builtins.fromTOML (builtins.readFile ./starship.toml);
     };
-  };
-
-  systemd.user.services.megasync = {
-    script = ''
-      megasync
-    '';
-    wantedBy = [ "multi-user.target" ];
   };
 
   # Nicely reload system units when changing configs
