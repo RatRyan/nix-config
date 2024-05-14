@@ -85,6 +85,13 @@
     };
   };
 
+  systemd.user.services.megasync = {
+    script = ''
+      megasync
+    '';
+    wantedBy = [ "multi-user.target" ];
+  };
+
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";
 }
