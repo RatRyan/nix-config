@@ -4,8 +4,8 @@
   ];
 
   nixpkgs.config = {
-    allowUnfree = true;
-    allowUnfreePredicate = _: true;
+    # allowUnfree = true;
+    # allowUnfreePredicate = _: true;
     permittedInsecurePackages = [
       # megasync
       "freeimage-unstable-2021-11-01"
@@ -52,6 +52,10 @@
 
     tidal-hifi
   ];
+
+  home.file = {
+    ".wezterm.lua".source = ./.wezterm.lua;
+  };
 
   programs = {
     git = {
