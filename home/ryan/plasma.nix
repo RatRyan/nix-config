@@ -3,7 +3,10 @@
     inputs.plasma-manager.homeManagerModules.plasma-manager
   ];
 
-  home.packages = [ pkgs.papirus-icon-theme ];
+  home.packages = [ 
+    pkgs.papirus-icon-theme
+    pkgs.materia-kde-theme
+  ];
 
   programs.plasma = {
     enable = true;
