@@ -19,7 +19,7 @@
     panels = [
       {
         location = "top";
-        height = 26;
+        height = 24;
         widgets = [
           "org.kde.plasma.appmenu"
           "org.kde.plasma.panelspacer"
