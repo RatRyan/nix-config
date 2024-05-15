@@ -7,11 +7,11 @@ config.default_prog = { "fish" }
 
 -- Theme
 local custom = wezterm.color.get_builtin_schemes()["MaterialDarker"]
-custom.background = "#1D1D1F"
+custom.background = "#000000"
 config.color_schemes = {
 	["custom"] = custom,
 }
-config.color_scheme = "MaterialDarker"
+config.color_scheme = "custom"
 config.font_size = 12
 
 -- General Settings
