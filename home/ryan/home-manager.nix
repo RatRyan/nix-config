@@ -69,14 +69,15 @@
       enable = true;
       interactiveShellInit = builtins.readFile ./config.fish;
     };
-    wezterm = {
-      enable = true;
-      extraConfig = builtins.readFile ./.wezterm.lua;
-    };
     starship = {
       enable = true;
       settings = builtins.fromTOML (builtins.readFile ./starship.toml);
     };
+  };
+
+  home.file.".wezterm.lua" = {
+    source = "./.wezterm.lua";
+    target = "~/.wezterm.lua";
   };
 
   # Nicely reload system units when changing configs
