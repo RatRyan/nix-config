@@ -18,6 +18,7 @@
   };
 
   environment.sessionVariables = {
+    NIXPKGS_ALLOW_UNFREE = "1";
     FLAKE = "/home/ryan/.nixos-config";
     NIXOS_OZONE_WL = "1";
   };
@@ -26,9 +27,9 @@
     vim
     firefox
     wget
-    neofetch
     git
     btop
+    neofetch
 
     nh # only used for the search functionallity
     nixd
@@ -45,7 +46,6 @@
     lazydocker
     xclip
     wl-clipboard
-    wezterm
     home-manager
 
     # I hate you microsoft

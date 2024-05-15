@@ -12,11 +12,8 @@
     ];
   };
 
-  home = {
-    username = "ryan";
-    homeDirectory = "/home/ryan";
-    stateVersion = "23.11";
-  };
+  home.username = "ryan";
+  home.homeDirectory = "/home/ryan";
 
   home.packages = with pkgs; [
     sl
@@ -48,6 +45,8 @@
     obs-studio
     obsidian
 
+    wezterm
+
     discord
     teams-for-linux
 
@@ -75,11 +74,8 @@
     };
   };
 
-  home.file.".wezterm.lua" = {
-    source = "./.wezterm.lua";
-    target = "~/.wezterm.lua";
-  };
-
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";
+
+  home.stateVersion = "23.11";
 }
