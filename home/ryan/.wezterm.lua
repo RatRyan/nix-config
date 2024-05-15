@@ -7,7 +7,7 @@ config.default_prog = { "fish" }
 
 -- Theme
 local custom = wezterm.color.get_builtin_schemes()["MaterialDarker"]
-custom.background = "#262626"
+custom.background = "#000000"
 config.color_schemes = {
 	["custom"] = custom,
 }

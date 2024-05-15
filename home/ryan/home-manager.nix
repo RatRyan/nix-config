@@ -4,8 +4,7 @@
   ];
 
   nixpkgs.config = {
-    # allowUnfree = true;
-    # allowUnfreePredicate = _: true;
+    allowUnfree = true;
     permittedInsecurePackages = [
       # megasync
       "freeimage-unstable-2021-11-01"
