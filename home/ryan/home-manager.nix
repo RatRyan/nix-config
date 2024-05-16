@@ -52,10 +52,6 @@
     tidal-hifi
   ];
 
-  home.file = {
-    ".wezterm.lua".source = ./.wezterm.lua;
-  };
-
   programs = {
     git = {
       enable = true;
