@@ -6,7 +6,6 @@
   home.packages = [ 
     pkgs.papirus-icon-theme
     pkgs.materia-kde-theme
-    pkgs.libsForQt5.Bismuth
   ];
 
   programs.plasma = {

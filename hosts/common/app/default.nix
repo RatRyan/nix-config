@@ -2,6 +2,9 @@
   virtualisation.virtualbox.host.enable = true;
   virtualisation.docker.enable = true;
 
+  virtualisation.libvirtd.enable = true;
+  programs.virt-manager.enable = true;
+
   services = {
     xserver.enable = true;
     displayManager.sddm.wayland.enable = true;
