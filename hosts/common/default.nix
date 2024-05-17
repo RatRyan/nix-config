@@ -56,6 +56,7 @@
   ];
 
   programs.fish.enable = true;
+  programs.zsh.enable = true;
   programs.steam.enable = true;
 
   users.users = {
@@ -66,7 +67,6 @@
       shell = pkgs.fish;
     };
   };
-  users.extraGroups.vboxusers.members = [ "ryan" ];
 
   home-manager = {
     extraSpecialArgs = { inherit inputs; };
