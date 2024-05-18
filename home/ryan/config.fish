@@ -32,6 +32,7 @@ alias ls="exa -l --icons"
 alias ga="git add ."
 alias gp="git push"
 alias gg="lazygit"
+alias neofetch="neofetch --source ~/.config/neofetch/forthehorde.txt"
 
 bind \cz 'fg 2>/dev/null; commandline -f repaint'
 
