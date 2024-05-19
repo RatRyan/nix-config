@@ -16,16 +16,16 @@
     };
   };
 
-  outputs = { nixpkgs, stylix, ... }@inputs: {
+  outputs = { nixpkgs, ... }@inputs: {
     nixosConfigurations = {
       # Personal Desktop
       byregot = nixpkgs.lib.nixosSystem {
-        modules = [ ./hosts/byregot stylix ];
+        modules = [ ./hosts/byregot ];
         specialArgs = { inherit inputs; };
       };
       # School Laptop
       rhalgr = nixpkgs.lib.nixosSystem {
-        modules = [ ./hosts/rhalgr stylix ];
+        modules = [ ./hosts/rhalgr inputs.stylix.nixosModules.stylix ];
         specialArgs = { inherit inputs; };
       };
     };
