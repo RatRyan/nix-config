@@ -10,5 +10,5 @@
   };
   xdg.portal.enable = true;
 
-  stylix.image = ~/Pictures/wallpapers/ashen.jpg
+  stylix.image = /home/ryan/Pictures/wallpapers/ashen.jpg
 }
