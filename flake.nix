@@ -25,7 +25,7 @@
       };
       # School Laptop
       rhalgr = nixpkgs.lib.nixosSystem {
-        modules = [ ./hosts/rhalgr inputs.stylix.nixosModules.stylix ];
+        modules = [ ./hosts/rhalgr ];
         specialArgs = { inherit inputs; };
       };
     };

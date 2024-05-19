@@ -9,6 +9,4 @@
     desktopManager.plasma6.enable = true;
   };
   xdg.portal.enable = true;
-
-  stylix.image = /home/ryan/Pictures/wallpapers/ashen.jpg;
 }
