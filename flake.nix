@@ -4,10 +4,10 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
-    home-manager = {
-      url = "github:misterio77/home-manager/xdg-portal-update";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    home-manager.url = "github:misterio77/home-manager/xdg-portal-update";
+    home-manager.inputs.nixpkgs.follows = "nixpkgs";
+
+    stylix.url = "github:danth/stylix";
 
     plasma-manager = {
       url = "github:pjones/plasma-manager";
@@ -16,16 +16,16 @@
     };
   };
 
-  outputs = { nixpkgs, ... }@inputs: {
+  outputs = { nixpkgs, stylix, ... }@inputs: {
     nixosConfigurations = {
       # Personal Desktop
       byregot = nixpkgs.lib.nixosSystem {
-        modules = [ ./hosts/byregot ];
+        modules = [ ./hosts/byregot stylix ];
         specialArgs = { inherit inputs; };
       };
       # School Laptop
       rhalgr = nixpkgs.lib.nixosSystem {
-        modules = [ ./hosts/rhalgr ];
+        modules = [ ./hosts/rhalgr stylix ];
         specialArgs = { inherit inputs; };
       };
     };
