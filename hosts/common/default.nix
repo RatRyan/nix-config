@@ -52,6 +52,7 @@
     lazydocker
     xclip
     wl-clipboard
+    starship
     home-manager
 
     # I hate you microsoft
@@ -77,7 +78,7 @@
   home-manager = {
     extraSpecialArgs = { inherit inputs; };
     useGlobalPkgs = true;
-    useUserPkgs = true;
+    useUserPackages = true;
     users = {
       ryan = import ../../home/ryan/home-manager.nix;
     };
