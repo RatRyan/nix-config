@@ -1,4 +1,7 @@
 { pkgs, ... }: {
+  imports = [
+    ./gnome.nix
+  ];
   nixpkgs.config = {
     allowUnfree = true;
     permittedInsecurePackages = [
