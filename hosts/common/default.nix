@@ -76,6 +76,8 @@
 
   home-manager = {
     extraSpecialArgs = { inherit inputs; };
+    useGlobalPkgs = true;
+    useUserPkgs = true;
     users = {
       ryan = import ../../home/ryan/home-manager.nix;
     };
