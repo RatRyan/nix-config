@@ -1,8 +1,4 @@
 { pkgs, ... }: {
-  imports = [
-    ./plasma.nix
-  ];
-
   nixpkgs.config = {
     allowUnfree = true;
     permittedInsecurePackages = [
