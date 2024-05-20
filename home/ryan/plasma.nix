@@ -21,11 +21,14 @@
         location = "top";
         height = 24;
         widgets = [
-          "org.kde.plasma.appmenu"
+          "org.kde.plasma.mediacontroller"
           "org.kde.plasma.panelspacer"
-          "org.kde.plasma.digitalclock"
+          "org.kde.plasma.pager"
           "org.kde.plasma.panelspacer"
+          "org.kde.plasma.colorpicker"
+          "org.kde.plasma.marginsseparator"
           "org.kde.plasma.systemtray"
+          "org.kde.plasma.digitalclock"
         ];
       }
     ];
@@ -646,9 +649,6 @@
       "kwinrc"."Effect-slide"."VerticalGap".value = 0;
       "kwinrc"."Effect-windowview"."BorderActivateAll".value = 9;
       "kwinrc"."ModifierOnlyShortcuts"."Meta".value = "org.kde.kglobalaccel,/component/kwin,org.kde.kglobalaccel.Component,invokeShortcut,Overview";
-      "kwinrc"."Plugins"."desktopchangeosdEnabled".value = true;
-      "kwinrc"."Plugins"."slideEnabled".value = false;
-      "kwinrc"."Script-desktopchangeosd"."PopupHideDelay".value = 300;
       "kwinrc"."Tiling"."padding".value = 4;
       "kwinrc"."Tiling/00072d4c-51db-5e54-9b8c-e8a6e4d2fcea"."tiles".value = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
       "kwinrc"."Tiling/213a9620-187e-58a6-b80b-85d8fb95dfce"."tiles".value = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";

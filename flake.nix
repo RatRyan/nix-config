@@ -7,8 +7,6 @@
     home-manager.url = "github:misterio77/home-manager/xdg-portal-update";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
-    stylix.url = "github:danth/stylix";
-
     plasma-manager = {
       url = "github:pjones/plasma-manager";
       inputs.nixpkgs.follows = "nixpkgs";
