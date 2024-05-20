@@ -1,6 +1,6 @@
 {
   dconf.settings = {
-    "/org/gnome/mutter/" = {
+    "org/gnome/mutter" = {
       experimental-features = [ "scale-monitor-framebuffer" ];
     };
   };
