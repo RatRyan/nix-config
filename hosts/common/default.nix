@@ -34,7 +34,9 @@
     firefox
     wget
     git
+    gh
     btop
+    nushell
     neofetch
 
     nh # only used for the search functionallity
@@ -42,7 +44,6 @@
     nixpkgs-fmt
     gnumake
     unzip
-    gh
     zoxide
     fzf
     eza
