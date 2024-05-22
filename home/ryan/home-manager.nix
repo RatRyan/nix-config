@@ -49,6 +49,7 @@
     teams-for-linux
 
     tidal-hifi
+    spotify
   ];
 
   programs = {
