@@ -30,5 +30,8 @@
       switch-to-application-3 = [];
       switch-to-application-4 = [];
     };
+    "org/gnome/desktop/wm/preferences" = {
+      resize-with-right-button = true;
+    };
   };
 }
