@@ -5,7 +5,7 @@
     ../common
   ];
 
-  networking.hostName = "rhalgr";
+  networking.hostName = "ifrit";
 
   services.xserver.xkb.variant = lib.mkForce "colemak_dh";
   services.keyd = {
