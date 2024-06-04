@@ -5,7 +5,7 @@
     ../common
   ];
 
-  networking.hostName = "byregot";
+  networking.hostName = "titan";
 
   hardware.nvidia = {
     modesetting.enable = true;
