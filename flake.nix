@@ -18,7 +18,7 @@
     nixosConfigurations = {
       # Personal Desktop
       byregot = nixpkgs.lib.nixosSystem {
-        modules = [ ./hosts/byregot ];
+        modules = [ ./hosts/titan ];
         specialArgs = { inherit inputs; };
       };
       # School Laptop
