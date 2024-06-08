@@ -17,7 +17,7 @@
   outputs = { nixpkgs, ... }@inputs: {
     nixosConfigurations = {
       # Personal Desktop
-      byregot = nixpkgs.lib.nixosSystem {
+      titan = nixpkgs.lib.nixosSystem {
         modules = [ ./hosts/titan ];
         specialArgs = { inherit inputs; };
       };
