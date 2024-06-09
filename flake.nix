@@ -23,7 +23,7 @@
       };
       # School Laptop
       rhalgr = nixpkgs.lib.nixosSystem {
-        modules = [ ./hosts/rhalgr ];
+        modules = [ ./hosts/ifrit ];
         specialArgs = { inherit inputs; };
       };
     };
