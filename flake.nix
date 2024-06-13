@@ -22,7 +22,7 @@
         specialArgs = { inherit inputs; };
       };
       # School Laptop
-      ifit = nixpkgs.lib.nixosSystem {
+      ifrit = nixpkgs.lib.nixosSystem {
         modules = [ ./hosts/ifrit ];
         specialArgs = { inherit inputs; };
       };
