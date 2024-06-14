@@ -17,7 +17,7 @@
   outputs = { nixpkgs, ... }@inputs: {
     nixosConfigurations = {
       # Personal Desktop
-      titan = nixpkgs.lib.nixosSystem {
+      ttan = nixpkgs.lib.nixosSystem {
         modules = [ ./hosts/titan ];
         specialArgs = { inherit inputs; };
       };
