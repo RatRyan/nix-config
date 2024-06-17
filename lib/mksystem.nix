@@ -1,12 +1,8 @@
-{ inputs, nixpkgs }: hostname: { system, hardware, stateVersion }:
-let
-  hardwareConfig = ../hardware/${hardware}.nix;
-in nixpkgs.lib.nixosSystem
-{
+{ inputs, nixpkgs }: hostname: { system, hardware, stateVersion, extraModules ? [] }: nixpkgs.lib.nixosSystem {
   inherit system;
 
   modules = [
-    hardwareConfig
+    ../hardware/${hardware}.nix
     ../configuration.nix
     inputs.home-manager.nixosModules.home-manager {
       home-manager.useGlobalPkgs = true;
@@ -17,5 +13,5 @@ in nixpkgs.lib.nixosSystem
       networking.hostName = hostname;
       system.stateVersion = stateVersion;
     }
-  ];
+  ] ++ extraModules;
 }

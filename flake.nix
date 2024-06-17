@@ -10,9 +10,7 @@
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs: 
   let
-    mkSystem = import ./lib/mksystem.nix {
-      inherit inputs nixpkgs;
-    };
+    mkSystem = import ./lib/mksystem.nix { inherit inputs nixpkgs; };
   in
   {
     nixosConfigurations = {
