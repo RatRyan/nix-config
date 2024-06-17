@@ -1,6 +1,6 @@
 { pkgs, ... }: {
   imports = [
-    ./hardware-configuration.nix
+    ./hardware/thinkpad.nix
   ];
 
   # Bootloader.
