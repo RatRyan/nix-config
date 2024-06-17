@@ -12,7 +12,10 @@
         modules = [
           ./hardware/thinkpad.nix
           ./configuration.nix
-          { networking.hostName = "ifrit"; }
+          { 
+            networking.hostName = "ifrit";
+            system.stateVersion = "24.05";
+          }
         ];
       };
       titan = nixpkgs.lib.nixosSystem {
