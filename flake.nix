@@ -10,23 +10,17 @@
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs: 
   let
-    mySystem = import ./lib/mkSystem.nix {
-      inherit inputs nixpkgs
-    }
+    mkSystem = import ./lib/mksystem.nix {
+      inherit inputs nixpkgs;
+    };
   in
   {
     nixosConfigurations = {
       # Laptop
-      ifrit = nixpkgs.lib.nixosSystem {
+      ifrit = mkSystem "ifrit" {
         system = "x86_64-linux";
-        modules = [
-          ./hardware/thinkpad.nix
-          ./configuration.nix
-          { 
-            networking.hostName = "ifrit";
-            system.stateVersion = "24.05";
-          }
-        ];
+        hardware = "thinkpad";
+        stateVersion = "24.05";
       };
     };
   };
