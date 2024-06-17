@@ -6,6 +6,8 @@
     vscode
     discord
     prismlauncher
+    steam
+    ani-cli
   ];
 
   home.stateVersion = "24.05";
