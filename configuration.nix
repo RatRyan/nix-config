@@ -60,8 +60,8 @@
     btop
     neofetch
     gnome.gnome-tweaks
-    webcord
     nixd
+    vscode
   ];
 
   # List services that you want to enable:

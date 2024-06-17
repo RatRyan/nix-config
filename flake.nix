@@ -8,8 +8,15 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, ... }@inputs: 
+  let
+    mySystem = import ./lib/mkSystem.nix {
+      inherit inputs nixpkgs
+    }
+  in
+  {
     nixosConfigurations = {
+      # Laptop
       ifrit = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
@@ -18,12 +25,6 @@
           { 
             networking.hostName = "ifrit";
             system.stateVersion = "24.05";
-          }
-          home-manager.nixosModules.home-manager
-          {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.users.ryan = import ./home.nix;
           }
         ];
       };

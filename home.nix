@@ -5,8 +5,8 @@
   home.packages = with pkgs; [
     vscode
     discord
+    webcord
     prismlauncher
-    steam
     ani-cli
   ];
 
