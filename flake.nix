@@ -15,6 +15,13 @@
           { networking.hostName = "ifrit"; }
         ];
       };
+      titan = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        modules = [
+          ./configuration.nix
+          { networking.hostName = "titan"; }
+        ];
+      };
     };
   };
 }
