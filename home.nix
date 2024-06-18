@@ -11,6 +11,7 @@
     tidal-hifi
     lazygit
     lazydocker
+    lutris
   ];
 
   home.stateVersion = "24.05";
