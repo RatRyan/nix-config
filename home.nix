@@ -1,4 +1,4 @@
-{ config, pkgs, ... }: {
+{ pkgs, ... }: {
   home.username = "ryan";
   home.homeDirectory = "/home/ryan";
 
@@ -9,6 +9,8 @@
     prismlauncher
     ani-cli
     tidal-hifi
+    lazygit
+    lazydocker
   ];
 
   home.stateVersion = "24.05";
