@@ -83,7 +83,6 @@
     neofetch
     gnome.gnome-tweaks
     nixd
-    vscode
   ];
 
   # List services that you want to enable:

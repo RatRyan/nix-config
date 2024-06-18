@@ -8,6 +8,7 @@
     webcord
     prismlauncher
     ani-cli
+    tidal-hifi
   ];
 
   home.stateVersion = "24.05";
