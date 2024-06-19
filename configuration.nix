@@ -88,8 +88,6 @@
     btop
     neofetch
     gnome.gnome-tweaks
-    nixd
-    nixfmt
     wl-clipboard
     home-manager
   ];
