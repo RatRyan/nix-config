@@ -19,7 +19,10 @@
         system = "x86_64-linux";
         hardware = "thinkpad";
         stateVersion = "24.05";
-        extraModules = [ ./modules/keyd.nix ];
+        extraModules = [ 
+          ./modules/keyd.nix
+          ./modules/prime.nix
+        ];
       };
     };
   };

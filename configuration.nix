@@ -68,6 +68,15 @@
     (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
   ];
 
+  # GPU stuff
+  hardware.opengl = {
+    enable = true;
+    driSupport = true;
+    driSupport32Bit = true;
+  };
+  services.xserver.videoDrivers = ["nvidia"];
+  hardware.nvidia.modesetting.enable = true;
+
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
@@ -80,6 +89,7 @@
     neofetch
     gnome.gnome-tweaks
     nixd
+    nixfmt
     wl-clipboard
     home-manager
   ];
