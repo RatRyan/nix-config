@@ -1,7 +1,7 @@
 { pkgs, ... }: {
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-  # Bootloader.
+  # Bootloader
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.grub = {
     enable = true;
@@ -13,11 +13,11 @@
   # Enable networking
   networking.networkmanager.enable = true;
 
-  # Enable the X11 windowing system.
+  # Enable the X11 windowing system
   services.xserver.enable = true;
   services.xserver.excludePackages = [ pkgs.xterm ];
 
-  # Enable the GNOME Desktop Environment.
+  # Enable the GNOME Desktop Environment
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
 
@@ -27,10 +27,10 @@
     variant = "colemak_dh";
   };
 
-  # Enable CUPS to print documents.
+  # Enable CUPS to print documents
   services.printing.enable = true;
 
-  # Enable sound with pipewire.
+  # Enable sound with pipewire
   hardware.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
@@ -80,6 +80,8 @@
     neofetch
     gnome.gnome-tweaks
     nixd
+    wl-clipboard
+    home-manager
   ];
 
   # Some programs I use

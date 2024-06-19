@@ -13,7 +13,14 @@
     lazydocker
   ];
 
-  programs.wezterm.enable = true;
+  programs = {
+    wezterm.enable = true;
+
+    starship = {
+      enable = true;
+      presets = [ "nerd-font-symbols" ];
+    };
+  };
 
   home.stateVersion = "24.05";
 
