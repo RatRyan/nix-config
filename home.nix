@@ -7,15 +7,27 @@
   };
 
   home.packages = with pkgs; [
+    # Code Editors
     vscode
-    discord
-    webcord
-    prismlauncher
-    ani-cli
-    tidal-hifi
+
+    # CLI Tools
     lazygit
     lazydocker
+    ani-cli
+
+    # Communication
+    discord
+    webcord
+
+    # Gaming
     protonup
+    prismlauncher
+    wine
+    winetricks
+    lutris
+
+    # Desktop Apps
+    tidal-hifi
   ];
 
   programs = {
