@@ -90,6 +90,8 @@
     gnome.gnome-tweaks
     wl-clipboard
     home-manager
+    wine
+    winetricks
   ];
 
   # Some programs I use

@@ -23,9 +23,6 @@
     # Gaming
     protonup
     prismlauncher
-    wine
-    winetricks
-    lutris
 
     # Desktop Apps
     tidal-hifi
