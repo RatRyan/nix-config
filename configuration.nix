@@ -81,8 +81,6 @@
     gnome.gnome-tweaks
     nixd
     wl-clipboard
-    mangohud
-    protonup
     home-manager
   ];
 
