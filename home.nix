@@ -18,6 +18,7 @@
     # Communication
     discord
     webcord
+    teams-for-linux
 
     # Gaming
     protonup
