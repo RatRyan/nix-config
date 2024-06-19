@@ -74,7 +74,7 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  # List packages installed in system profile. To search, run:
+  # System level packages
   environment.systemPackages = with pkgs; [
     vim
     neovim
@@ -84,25 +84,4 @@
     gnome.gnome-tweaks
     nixd
   ];
-
-  # List services that you want to enable:
-  services.keyd = {
-    enable = true;
-    keyboards.default.settings = {
-      main = {
-        capslock = "overload(nav, backspace)";
-      };
-      nav = {
-        q = "escape";
-        j = "left";
-        k = "down";
-        i = "up";
-        l = "right";
-        u = "home";
-        o = "end";
-        p = "delete";
-        ";" = "backspace";
-      };
-    };
-  };
 }
