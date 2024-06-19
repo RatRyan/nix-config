@@ -81,10 +81,15 @@
     gnome.gnome-tweaks
     nixd
     wl-clipboard
+    mangohud
+    protonup
     home-manager
   ];
 
   # Some programs I use
-  programs.firefox.enable = true;
-  programs.steam.enable = true;
+  programs = {
+    firefox.enable = true;
+    steam.enable = true;
+    gamemode.enable = true;
+  };
 }
