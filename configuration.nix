@@ -13,10 +13,6 @@
   # Enable networking
   networking.networkmanager.enable = true;
 
-  fonts.packages = with pkgs; [
-    (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
-  ];
-
   # Enable the X11 windowing system.
   services.xserver.enable = true;
   services.xserver.excludePackages = [ pkgs.xterm ];
@@ -68,8 +64,9 @@
     extraGroups = [ "networkmanager" "wheel" ];
   };
 
-  # Install firefox.
-  programs.firefox.enable = true;
+  fonts.packages = with pkgs; [
+    (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
+  ];
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
@@ -84,4 +81,8 @@
     gnome.gnome-tweaks
     nixd
   ];
+
+  # Some programs I use
+  programs.firefox.enable = true;
+  programs.steam.enable = true;
 }
