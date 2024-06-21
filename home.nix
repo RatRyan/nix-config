@@ -32,7 +32,6 @@
   programs = {
     wezterm.enable = true;
     starship.enable = true;
-    lutris.enable = true;
   };
 
   home.stateVersion = "24.05";
