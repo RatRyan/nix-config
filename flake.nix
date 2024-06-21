@@ -19,7 +19,7 @@
         system = "x86_64-linux";
         hardware = "thinkpad";
         stateVersion = "24.05";
-        extraModules = [ 
+        extraModules = [
           ./modules/keyd.nix
           ./modules/nvidia-laptop.nix
         ];
