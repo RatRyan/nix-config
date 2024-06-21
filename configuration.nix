@@ -74,8 +74,6 @@
     driSupport = true;
     driSupport32Bit = true;
   };
-  services.xserver.videoDrivers = ["nvidia"];
-  hardware.nvidia.modesetting.enable = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
@@ -90,8 +88,6 @@
     gnome.gnome-tweaks
     wl-clipboard
     home-manager
-    wine
-    winetricks
   ];
 
   # Some programs I use

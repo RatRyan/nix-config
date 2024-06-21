@@ -21,7 +21,7 @@
         stateVersion = "24.05";
         extraModules = [ 
           ./modules/keyd.nix
-          ./modules/prime.nix
+          ./modules/nvidia-laptop.nix
         ];
       };
     };
