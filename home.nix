@@ -11,6 +11,7 @@
     vscode
 
     # CLI Tools
+    sl
     lazygit
     lazydocker
     ani-cli
