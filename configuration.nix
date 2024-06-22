@@ -88,6 +88,7 @@
     btop
     neofetch
     wl-clipboard
+    tmux
     home-manager
   ];
 
