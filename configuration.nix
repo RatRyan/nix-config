@@ -1,7 +1,4 @@
 { pkgs, ... }: {
-  imports = [
-    
-  ];
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   # Bootloader
@@ -21,6 +18,14 @@
     layout = "us";
     variant = "colemak_dh";
   };
+
+  # Enable the X11 windowing system
+  services.xserver.enable = true;
+  services.xserver.excludePackages = [ pkgs.xterm ];
+
+  # Enable the GNOME desktop environment
+  services.xserver.displayManager.gdm.enable = true;
+  services.xserver.desktopManager.gnome.enable = true;
 
   # Enable CUPS to print documents
   services.printing.enable = true;
@@ -80,10 +85,9 @@
     git
     btop
     neofetch
-    gnome.gnome-tweaks
     wl-clipboard
-    home-manager
     bottles
+    home-manager
   ];
 
   # Some programs I use
