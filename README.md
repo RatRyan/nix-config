@@ -1,2 +1,2 @@
 # nixos-config
-I have a better understanding how nix works so its time for a rewrite...
+

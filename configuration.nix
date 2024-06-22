@@ -58,10 +58,12 @@
   };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
+  programs.zsh.enable = true;
   users.users.ryan = {
     isNormalUser = true;
     description = "Ryan Ratajczak";
     extraGroups = [ "networkmanager" "wheel" ];
+    shell = pkgs.zsh;
   };
 
   fonts.packages = with pkgs; [
