@@ -11,6 +11,7 @@
     vscode
 
     # CLI Tools
+    zoxide
     distrobox
     sl
     lazygit
