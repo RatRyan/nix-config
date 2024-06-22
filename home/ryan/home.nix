@@ -35,6 +35,7 @@
     neovim.enable = true;
     starship.enable = true;
     wezterm.enable = true;
+    tmux.enable = true;
   };
 
   home.stateVersion = "24.05";
