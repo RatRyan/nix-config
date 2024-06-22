@@ -1,5 +1,5 @@
 { inputs, nixpkgs }: 
-hostname: { system, hardware, stateVersion, user, extraModules ? [] }: nixpkgs.lib.nixosSystem {
+hostname: { system, hardware, stateVersion, extraModules ? [] }: nixpkgs.lib.nixosSystem {
   inherit system;
 
   modules = [
@@ -8,7 +8,7 @@ hostname: { system, hardware, stateVersion, user, extraModules ? [] }: nixpkgs.l
     inputs.home-manager.nixosModules.home-manager {
       home-manager.useGlobalPkgs = true;
       home-manager.useUserPackages = true;
-      home-manager.users.${user} = import ../home/${user}/home.nix;
+      home-manager.users.ryan = import ../home/ryan/home.nix;
     }
     { 
       networking.hostName = hostname;
