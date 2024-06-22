@@ -13,7 +13,6 @@
     # CLI Tools
     zoxide
     distrobox
-    sl
     lazygit
     lazydocker
     ani-cli
