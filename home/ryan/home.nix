@@ -11,6 +11,7 @@
     vscode
 
     # CLI Tools
+    distrobox
     sl
     lazygit
     lazydocker

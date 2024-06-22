@@ -62,7 +62,7 @@
   users.users.ryan = {
     isNormalUser = true;
     description = "Ryan Ratajczak";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" ];
     shell = pkgs.zsh;
   };
 
@@ -82,13 +82,12 @@
 
   # System level packages
   environment.systemPackages = with pkgs; [
+    nano
     vim
-    neovim
     git
     btop
     neofetch
     wl-clipboard
-    bottles
     home-manager
   ];
 
@@ -98,4 +97,11 @@
     steam.enable = true;
     gamemode.enable = true;
   };
+
+  virtualisation.docker.enable = true;
+  virtualisation.docker.rootless = {
+    enable = true;
+    setSocketVariable = true;
+  };
+  virtualisation.podman.enable = true;
 }
