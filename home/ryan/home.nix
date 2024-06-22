@@ -17,6 +17,7 @@
     lazygit
     lazydocker
     ani-cli
+    gh
 
     # Communication
     discord
@@ -32,8 +33,9 @@
   ];
 
   programs = {
-    wezterm.enable = true;
+    neovim.enable = true;
     starship.enable = true;
+    wezterm.enable = true;
   };
 
   home.stateVersion = "24.05";
