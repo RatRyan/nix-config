@@ -3,12 +3,12 @@ hostname: { system, hardware, stateVersion, extraModules ? [] }: nixpkgs.lib.nix
   inherit system;
 
   modules = [
-    ../hardware/${hardware}.nix
-    ../system/configuration.nix
+    ./hardware/${hardware}.nix
+    ./system/configuration.nix
     inputs.home-manager.nixosModules.home-manager {
       home-manager.useGlobalPkgs = true;
       home-manager.useUserPackages = true;
-      home-manager.users.ryan = import ../home/ryan/home.nix;
+      home-manager.users.ryan = import ./home/ryan/home.nix;
     }
     { 
       networking.hostName = hostname;
