@@ -4,7 +4,7 @@ hostname: { system, hardware, stateVersion, extraModules ? [] }: nixpkgs.lib.nix
 
   modules = [
     ../hardware/${hardware}.nix
-    ../configuration.nix
+    ../system/configuration.nix
     inputs.home-manager.nixosModules.home-manager {
       home-manager.useGlobalPkgs = true;
       home-manager.useUserPackages = true;
