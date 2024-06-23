@@ -30,6 +30,7 @@
 
     # Desktop Apps
     tidal-hifi
+    obsidian
   ];
 
   programs = {
