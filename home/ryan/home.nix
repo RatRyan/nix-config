@@ -11,12 +11,13 @@
     vscode
 
     # CLI Tools
-    zoxide
-    distrobox
-    lazygit
-    lazydocker
     ani-cli
+    direnv
+    distrobox
     gh
+    lazydocker
+    lazygit
+    zoxide
 
     # Communication
     discord
