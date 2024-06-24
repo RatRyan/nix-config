@@ -22,19 +22,17 @@
     zoxide
 
     # Cloud Tools
-    awscli2
+    awscli2 aws-sam-cli
 
     # Communication
     discord webcord
     teams-for-linux
 
     # Gaming
-    protonup
-    prismlauncher
+    protonup prismlauncher
 
     # Desktop Apps
-    tidal-hifi
-    obsidian
+    tidal-hifi obsidian
   ];
 
   programs = {
