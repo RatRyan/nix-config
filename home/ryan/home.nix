@@ -7,7 +7,7 @@
   };
 
   home.packages = with pkgs; [
-    # Global code tools
+    # Language Tools
     gcc cmake
 
     # Code Editors
@@ -18,9 +18,11 @@
     direnv
     distrobox
     gh
-    lazydocker
-    lazygit
+    lazygit lazydocker
     zoxide
+
+    # Cloud Tools
+    awscli2
 
     # Communication
     discord webcord
