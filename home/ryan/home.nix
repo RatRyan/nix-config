@@ -7,6 +7,9 @@
   };
 
   home.packages = with pkgs; [
+    # Global code tools
+    gcc cmake
+
     # Code Editors
     vscode
 
@@ -20,8 +23,7 @@
     zoxide
 
     # Communication
-    discord
-    webcord
+    discord webcord
     teams-for-linux
 
     # Gaming
