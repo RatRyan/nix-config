@@ -10,9 +10,6 @@
     # Language Tools
     gcc cmake
 
-    # Code Editors
-    vscode
-
     # CLI Tools
     ani-cli
     direnv
