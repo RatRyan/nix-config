@@ -19,7 +19,7 @@
     distrobox
     gh
     lazygit lazydocker
-    zoxide
+    zoxide fzf
 
     # Cloud Tools
     awscli2 aws-sam-cli
