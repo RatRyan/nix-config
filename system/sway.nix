@@ -4,6 +4,8 @@
     grim # screenshot functionality
     slurp # screenshot functionality
     mako # notification system developed by swaywm maintainer
+    autotiling
+    swaybg
   ];
 
   # Enable the gnome-keyring secrets vault. 
