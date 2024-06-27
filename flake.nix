@@ -15,7 +15,8 @@
   {
     nixosConfigurations = {
       # Laptop
-      ifrit = mkSystem "ifrit" {
+      ifrit = mkSystem "ifrit" 
+      {
         system = "x86_64-linux";
         hardware = "thinkpad";
         stateVersion = "24.05";

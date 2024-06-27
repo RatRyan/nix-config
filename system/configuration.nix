@@ -1,4 +1,8 @@
 { pkgs, ... }: {
+  imports = [
+    ./sway.nix
+  ];
+
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   # Bootloader

@@ -11,12 +11,11 @@
     gcc cmake
 
     # CLI Tools
-    ani-cli
     direnv
     distrobox
     gh
     lazygit lazydocker
-    zoxide fzf
+    fzf bat zoxide
 
     # Cloud Tools
     awscli2 aws-sam-cli
