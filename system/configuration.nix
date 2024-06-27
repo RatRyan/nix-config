@@ -1,9 +1,5 @@
 { pkgs, ... }:
 {
-  imports = [
-    ./sway.nix
-  ];
-
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   # Bootloader
@@ -31,6 +27,8 @@
   # Enable the GNOME desktop environment
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
+
+  services.xserver.windowManager.i3.enable = true;
 
   # Enable CUPS to print documents
   services.printing.enable = true;
@@ -90,6 +88,10 @@
     wl-clipboard
     tmux
     home-manager
+    dmenu #application launcher most people use
+    i3status # gives you the default i3 status bar
+    i3lock #default i3 screen locker
+    i3blocks #if you are planning on using i3blocks over i3status
   ];
 
   # Some programs I use
