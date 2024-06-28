@@ -9,13 +9,15 @@
   home.packages = with pkgs; [
     # Language Tools
     gcc cmake
+    python3 pyright
+    go gopls
 
     # CLI Tools
     direnv
     distrobox
-    gh
     lazygit lazydocker
-    fzf bat zoxide
+    fzf bat zoxide ripgrep
+    unzip
 
     # Cloud Tools
     awscli2 aws-sam-cli
