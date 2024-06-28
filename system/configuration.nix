@@ -1,5 +1,6 @@
 { pkgs, ... }:
 {
+  # Enable expiremental features
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   # Bootloader
@@ -27,6 +28,7 @@
   # Enable the GNOME desktop environment
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
+  services.xserver.windowManager.dwm.enable = true;
 
   # Enable CUPS to print documents
   services.printing.enable = true;
@@ -42,9 +44,11 @@
     jack.enable = true;
   };
 
-  # Locale
-  time.timeZone = "America/Denver";
+  # Used to be opengl but I guess its this now
+  hardware.graphics.enable = true;
 
+  # Locale and Timezone
+  time.timeZone = "America/Denver";
   i18n.defaultLocale = "en_US.UTF-8";
   i18n.extraLocaleSettings = {
     LC_ADDRESS = "en_US.UTF-8";
@@ -58,47 +62,42 @@
     LC_TIME = "en_US.UTF-8";
   };
 
-  # Define a user account. Don't forget to set a password with ‘passwd’.
-  programs.zsh.enable = true;
+  # User account configuration
   users.users.ryan = {
     isNormalUser = true;
     description = "Ryan Ratajczak";
     extraGroups = [ "networkmanager" "wheel" "docker" ];
     shell = pkgs.zsh;
   };
-
-  fonts.packages = with pkgs; [
-    (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
-  ];
-
-  hardware.graphics.enable = true;
+  programs.zsh.enable = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
   # System level packages
   environment.systemPackages = with pkgs; [
-    nano
-    vim
+    neovim
     git
     btop
     neofetch
-    wl-clipboard
+    xclip wl-clipboard
     tmux
+    firefox
     home-manager
   ];
 
-  # Some programs I use
-  programs = {
-    firefox.enable = true;
-    steam.enable = true;
-    gamemode.enable = true;
-  };
+  # Program configuration
+  programs.steam.enable = true;
 
-  virtualisation.docker.enable = true;
-  virtualisation.docker.rootless = {
+  # Fonts
+  fonts.packages = with pkgs; [
+    (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
+  ];
+
+  # Virtualisation configuration
+  virtualisation.docker = {
     enable = true;
-    setSocketVariable = true;
+    rootless.enable = true;
+    rootless.setSocketVariable = true;
   };
-  virtualisation.podman.enable = true;
 }
