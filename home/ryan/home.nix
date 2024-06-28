@@ -8,29 +8,40 @@
 
   home.packages = with pkgs; [
     # Language Tools
-    gcc cmake
-    python3 pyright
-    go gopls
+    gcc
+    cmake
+    python3 
+    pyright
+    go
+    gopls
 
     # CLI Tools
     direnv
     distrobox
-    lazygit lazydocker
-    fzf bat zoxide ripgrep
+    lazygit
+    lazydocker
+    fzf
+    bat
+    zoxide
+    ripgrep
     unzip
 
     # Cloud Tools
-    awscli2 aws-sam-cli
+    awscli2
+    aws-sam-cli
 
     # Communication
-    discord webcord
+    discord
+    webcord
     teams-for-linux
 
     # Gaming
-    protonup prismlauncher
+    protonup
+    prismlauncher
 
     # Desktop Apps
-    tidal-hifi obsidian
+    tidal-hifi
+    obsidian
   ];
 
   programs = {

@@ -77,9 +77,11 @@
   environment.systemPackages = with pkgs; [
     neovim
     git
+    gh
     btop
     neofetch
-    xclip wl-clipboard
+    xclip 
+    wl-clipboard
     tmux
     firefox
     home-manager
@@ -99,4 +101,5 @@
     rootless.enable = true;
     rootless.setSocketVariable = true;
   };
+  virtualisation.podman.enable = true;
 }
