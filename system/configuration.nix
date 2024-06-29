@@ -25,9 +25,20 @@
   services.xserver.enable = true;
   services.xserver.excludePackages = [ pkgs.xterm ];
 
-  # Enable the GNOME desktop environment
+  # Enable GNOME desktop environment
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
+
+  # Enable i3 window manager
+  services.xserver.windowManager.i3 = {
+    enable = true;
+    extraPackages = with pkgs; [
+      dmenu
+      i3status
+      i3lock
+      i3blocks
+   ];
+  };
 
   # Enable CUPS to print documents
   services.printing.enable = true;
