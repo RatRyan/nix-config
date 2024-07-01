@@ -91,7 +91,10 @@
 
   # Program configuration
   programs.steam.enable = true;
-  programs.hyprland.enable = true;
+  programs.sway = {
+    enable = true;
+    extraOptions = ["--unsupported-gpu"]
+  }
 
   # Fonts
   fonts.packages = with pkgs; [
