@@ -14,6 +14,7 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
+  networking.firewall.enable = false;
   services.openssh.enable = true;
 
   # Configure keymap in X11
@@ -29,17 +30,6 @@
   # Enable GNOME desktop environment
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
-
-  # Enable i3 window manager
-  services.xserver.windowManager.i3 = {
-    enable = true;
-    extraPackages = with pkgs; [
-      dmenu
-      i3status
-      i3lock
-      i3blocks
-   ];
-  };
 
   # Enable CUPS to print documents
   services.printing.enable = true;
