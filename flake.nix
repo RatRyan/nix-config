@@ -21,7 +21,7 @@
         hardware = "thinkpad";
         stateVersion = "24.05";
         extraModules = [
-          ./modules/nixos/laptop.nix
+          ./modules/nixos/thinkpad.nix
           ./modules/nixos/keyd.nix
         ];
       };
