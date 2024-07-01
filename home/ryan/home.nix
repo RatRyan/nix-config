@@ -31,11 +31,14 @@
     # Desktop Apps
     tidal-hifi
     obsidian
+    wezterm
   ];
 
   programs = {
-    neovim.enable = true;
-    starship.enable = true;
+    starship = {
+      enable = true;
+      settings = (builtins.fromTOML (builtins.readFile ./starship.toml));
+    };
     wezterm.enable = true;
     tmux.enable = true;
   };
