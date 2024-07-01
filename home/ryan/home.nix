@@ -7,14 +7,6 @@
   };
 
   home.packages = with pkgs; [
-    # Language Tools
-    gcc
-    cmake
-    python3 
-    pyright
-    go
-    gopls
-
     # CLI Tools
     direnv
     distrobox
@@ -34,10 +26,7 @@
     discord
     webcord
     teams-for-linux
-
-    # Gaming
-    protonup
-    prismlauncher
+    zoom-us
 
     # Desktop Apps
     tidal-hifi
