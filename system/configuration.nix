@@ -93,8 +93,8 @@
   programs.steam.enable = true;
   programs.sway = {
     enable = true;
-    extraOptions = ["--unsupported-gpu"]
-  }
+    extraOptions = ["--unsupported-gpu"];
+  };
 
   # Fonts
   fonts.packages = with pkgs; [
