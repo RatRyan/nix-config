@@ -31,6 +31,12 @@
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
 
+  # Enable sway window manager (for some reason I cant get i3 to work)
+  programs.sway = {
+    enable = true;
+    extraOptions = ["--unsupported-gpu"];
+  };
+
   # Enable CUPS to print documents
   services.printing.enable = true;
 
@@ -93,10 +99,6 @@
 
   # Program configuration
   programs.steam.enable = true;
-  programs.sway = {
-    enable = true;
-    extraOptions = ["--unsupported-gpu"];
-  };
 
   # Fonts
   fonts.packages = with pkgs; [
