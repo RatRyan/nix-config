@@ -14,7 +14,7 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
-  networking.firewall.enable = false;
+  networking.firewall.allowedTCPPorts = [ 8080 3000 ];
   services.openssh.enable = true;
 
   # Configure keymap in X11
@@ -87,6 +87,8 @@
     tmux
     firefox
     home-manager
+    dmenu
+    autotiling
   ];
 
   # Program configuration
