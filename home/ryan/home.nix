@@ -8,15 +8,17 @@
 
   home.packages = with pkgs; [
     # CLI Tools
+    bat
     direnv
     distrobox
+    eza
+    fzf
     lazygit
     lazydocker
-    fzf
-    bat
-    zoxide
     ripgrep
+    tmux
     unzip
+    zoxide
 
     # Cloud Tools
     awscli2
@@ -24,8 +26,8 @@
 
     # Communication
     discord
-    webcord
     teams-for-linux
+    webcord
     zoom-us
 
     # Desktop Apps
@@ -34,13 +36,9 @@
     wezterm
   ];
 
-  programs = {
-    starship = {
-      enable = true;
-      settings = (builtins.fromTOML (builtins.readFile ./starship.toml));
-    };
-    wezterm.enable = true;
-    tmux.enable = true;
+  programs.starship = {
+    enable = true;
+    settings = (builtins.fromTOML (builtins.readFile ./starship.toml));
   };
 
   home.stateVersion = "24.05";
