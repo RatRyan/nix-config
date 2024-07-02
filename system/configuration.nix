@@ -90,9 +90,6 @@
     home-manager
   ];
 
-  # Program configuration
-  programs.steam.enable = true;
-
   # Fonts
   fonts.packages = with pkgs; [
     (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })

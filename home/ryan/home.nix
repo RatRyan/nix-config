@@ -36,7 +36,7 @@
     wezterm
   ];
 
-  home.file.".zshrc".source = ./zshrc
+  home.file.".zshrc".source = ./zshrc;
 
   programs.starship = {
     enable = true;
