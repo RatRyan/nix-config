@@ -36,6 +36,8 @@
     wezterm
   ];
 
+  home.file.".zshrc".source = ./zshrc
+
   programs.starship = {
     enable = true;
     settings = (builtins.fromTOML (builtins.readFile ./starship.toml));
