@@ -13,8 +13,8 @@
     distrobox
     eza
     fzf
-    lazygit
     lazydocker
+    lazygit
     ripgrep
     tmux
     unzip
