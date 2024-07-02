@@ -86,13 +86,12 @@
     wl-clipboard
     tmux
     firefox
+    meslo-lgs-nf
     home-manager
   ];
 
   # Program configuration
   programs.steam.enable = true;
-  programs.light.enable = true;
-  programs.nix-ld.enable = true;
 
   # Fonts
   fonts.packages = with pkgs; [
