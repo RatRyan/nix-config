@@ -34,6 +34,7 @@
   # Enable sway window manager (for some reason I cant get i3 to work)
   programs.sway = {
     enable = true;
+    # Kernal panic goes brr thanks nvidia
     extraOptions = ["--unsupported-gpu"];
   };
 
@@ -73,7 +74,7 @@
   users.users.ryan = {
     isNormalUser = true;
     description = "Ryan Ratajczak";
-    extraGroups = [ "networkmanager" "wheel" "docker" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" "video" ];
     shell = pkgs.zsh;
   };
   programs.zsh.enable = true;
@@ -99,6 +100,7 @@
 
   # Program configuration
   programs.steam.enable = true;
+  programs.light.enable = true;
 
   # Fonts
   fonts.packages = with pkgs; [
