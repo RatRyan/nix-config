@@ -31,13 +31,6 @@
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
 
-  # Enable sway window manager (for some reason I cant get i3 to work)
-  programs.sway = {
-    enable = true;
-    # Kernal panic goes brr thanks nvidia
-    extraOptions = ["--unsupported-gpu"];
-  };
-
   # Enable CUPS to print documents
   services.printing.enable = true;
 
@@ -74,7 +67,7 @@
   users.users.ryan = {
     isNormalUser = true;
     description = "Ryan Ratajczak";
-    extraGroups = [ "networkmanager" "wheel" "docker" "video" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" ];
     shell = pkgs.zsh;
   };
   programs.zsh.enable = true;
@@ -94,8 +87,6 @@
     tmux
     firefox
     home-manager
-    dmenu
-    autotiling
   ];
 
   # Program configuration
