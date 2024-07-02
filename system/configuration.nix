@@ -101,6 +101,7 @@
   # Program configuration
   programs.steam.enable = true;
   programs.light.enable = true;
+  programs.nix-ld.enable = true;
 
   # Fonts
   fonts.packages = with pkgs; [
