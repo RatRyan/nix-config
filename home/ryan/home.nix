@@ -27,7 +27,6 @@
     # Communication
     discord
     teams-for-linux
-    webcord
     zoom-us
 
     # Desktop Apps
