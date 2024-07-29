@@ -8,7 +8,7 @@ hostname: { system, hardware, stateVersion, extraModules ? [] }: nixpkgs.lib.nix
     inputs.home-manager.nixosModules.home-manager {
       home-manager.useGlobalPkgs = true;
       home-manager.useUserPackages = true;
-      home-manager.users.ryan = import ./home/ryan/home.nix;
+      hom-manager.users.ryan = import ./home/ryan/home.nix;
     }
     { 
       networking.hostName = hostname;
