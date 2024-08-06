@@ -17,7 +17,7 @@
       # Laptop
       ifrit = mkSystem "ifrit" 
       {
-        sysstem = "x86_64-linux";
+        system = "x86_64-linux";
         hardware = "thinkpad";
         stateVersion = "24.05";
         extraModules = [
