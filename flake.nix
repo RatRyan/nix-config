@@ -19,7 +19,7 @@
       {
         system = "x86_64-linux";
         hardware = "thinkpad";
-        sssstateVersion = "24.05";
+        ssstateVersion = "24.05";
         extraModules = [
           ./modules/nixos/thinkpad.nix
           ./modules/nixos/keyd.nix
