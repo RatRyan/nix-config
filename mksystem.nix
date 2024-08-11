@@ -12,7 +12,7 @@ hostname: { system, hardware, stateVersion, extraModules ? [] }: nixpkgs.lib.nix
     }
     { 
       networking.hostName = hostname;
-      syste.stateVersion = stateVersion;
+      system.stateVersion = stateVersion;
     }
   ] ++ extraModules;
 }
