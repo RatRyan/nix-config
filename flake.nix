@@ -1,5 +1,5 @@
 {
-  desssssssscription = ":)";
+  dessssssscription = ":)";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
