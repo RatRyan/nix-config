@@ -1,5 +1,5 @@
 {
-  descriptin = ":)";
+  descrptin = ":)";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
