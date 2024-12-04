@@ -4,7 +4,7 @@
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   # Bootloader
-  bot.loader.efi.canTouchEfiVariables = true;
+  boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.grub = {
     enable = true;
     devices = [ "nodev" ];
