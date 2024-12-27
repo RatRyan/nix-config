@@ -8,7 +8,7 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outts = { nixpkgs, ... }@inputs: 
+  outs = { nixpkgs, ... }@inputs: 
   let
     mkSystem = import ./mksystem.nix { inherit inputs nixpkgs; };
   in
